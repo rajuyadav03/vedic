@@ -35,29 +35,31 @@
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
 <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
 <div class="layout-container flex h-full grow flex-col">
-<!-- Top Navigation Bar -->
-<header class="flex items-center justify-between border-b border-primary/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 py-3 sticky top-0 z-50">
-<div class="flex items-center gap-4 text-primary">
-<div class="size-8 flex items-center justify-center bg-primary/10 rounded-lg">
+<header class="flex items-center justify-between border-b border-primary/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-4 md:px-6 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-2 md:gap-4 text-primary">
+<button class="md:hidden p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="size-8 flex items-center justify-center bg-primary/10 rounded-lg shrink-0">
 <span class="material-symbols-outlined text-primary">local_fire_department</span>
 </div>
-<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight">Sacred Flame Health</h2>
+<h2 class="text-slate-900 dark:text-slate-100 text-base md:text-lg font-bold leading-tight tracking-tight hidden sm:block">Sacred Flame Health</h2>
 </div>
-<div class="flex flex-1 justify-end gap-4 items-center">
-<div class="flex gap-2">
-<button class="flex items-center justify-center rounded-xl size-10 bg-primary/5 hover:bg-primary/10 text-slate-700 dark:text-slate-300 transition-colors">
-<span class="material-symbols-outlined">notifications</span>
+<div class="flex flex-1 justify-end gap-2 md:gap-4 items-center pl-2">
+<div class="flex gap-1 md:gap-2">
+<button class="flex items-center justify-center rounded-xl size-8 md:size-10 bg-primary/5 hover:bg-primary/10 text-slate-700 dark:text-slate-300 transition-colors">
+<span class="material-symbols-outlined text-sm md:text-base">notifications</span>
 </button>
-<button class="flex items-center justify-center rounded-xl size-10 bg-primary/5 hover:bg-primary/10 text-slate-700 dark:text-slate-300 transition-colors">
-<span class="material-symbols-outlined">settings</span>
+<button class="flex items-center justify-center rounded-xl size-8 md:size-10 bg-primary/5 hover:bg-primary/10 text-slate-700 dark:text-slate-300 transition-colors">
+<span class="material-symbols-outlined text-sm md:text-base">settings</span>
 </button>
 </div>
-<div class="h-10 w-10 rounded-full bg-cover bg-center border-2 border-primary/20" data-alt="User profile portrait of a smiling woman" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBdqqla65_eF1u0y_Tvk4fpxhHq20-dUhglfP0Jx3QuJWFf6lJ_lUrweozBl3zwytisnUX81XEoqObTsPgPpUugb1LiECbMsDVxwkPvTNtDj02Ami1eT2wgSqBLIspJ8AgA52A-7IRlrDPTGOa6jlHw0M6hMge6XVdqAuJeM68AHjjnjGv-bshn7vqu1rxLFafvqJIZXGbc_qXM95dlEU9q7ABv3tUgNXVvla-S3mi9XoPnpzQNYaq2pVQQ_Anft3h2LN50H-pKnRxi')"></div>
+<div class="h-8 w-8 md:h-10 md:w-10 rounded-full bg-cover bg-center border-2 border-primary/20 shrink-0" data-alt="User profile portrait of a smiling woman" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBdqqla65_eF1u0y_Tvk4fpxhHq20-dUhglfP0Jx3QuJWFf6lJ_lUrweozBl3zwytisnUX81XEoqObTsPgPpUugb1LiECbMsDVxwkPvTNtDj02Ami1eT2wgSqBLIspJ8AgA52A-7IRlrDPTGOa6jlHw0M6hMge6XVdqAuJeM68AHjjnjGv-bshn7vqu1rxLFafvqJIZXGbc_qXM95dlEU9q7ABv3tUgNXVvla-S3mi9XoPnpzQNYaq2pVQQ_Anft3h2LN50H-pKnRxi')"></div>
 </div>
 </header>
-<div class="flex flex-1 flex-col lg:flex-row">
+<div class="flex flex-1 flex-col lg:flex-row h-[calc(100vh-64px)] overflow-hidden">
 <!-- Sidebar Navigation -->
-<aside class="w-full lg:w-64 border-r border-primary/5 p-4 flex flex-col gap-2 bg-white/50 dark:bg-background-dark/30">
+<aside class="hidden lg:flex w-full lg:w-64 border-r border-primary/5 p-4 flex-col gap-2 bg-white/50 dark:bg-background-dark/30 h-full overflow-y-auto">
 <div class="flex items-center gap-3 px-3 py-4 mb-4">
 <div class="bg-primary/10 rounded-full p-2">
 <span class="material-symbols-outlined text-primary">account_circle</span>
@@ -96,22 +98,26 @@
 </div>
 </aside>
 <!-- Main Content Area -->
-<main class="flex-1 p-6 lg:p-10 space-y-8 overflow-y-auto">
+<main class="flex-1 p-4 md:p-6 lg:p-10 space-y-6 md:space-y-8 overflow-y-auto w-full">
 <!-- Welcome & Quick Action -->
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 md:gap-6">
 <div>
-<h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Welcome back, Alex</h2>
-<p class="text-slate-500 dark:text-slate-400 mt-1">Your wellness journey is 85% on track this month.</p>
+<h2 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-slate-100 tracking-tight">Welcome back, Alex</h2>
+<p class="text-sm md:text-base text-slate-500 dark:text-slate-400 mt-1">Your wellness journey is 85% on track this month.</p>
 </div>
-<button class="flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-bold hover:shadow-xl hover:shadow-primary/30 transition-all active:scale-95">
-<span class="material-symbols-outlined">add_circle</span>
+<button class="flex items-center justify-center gap-2 bg-primary text-white px-4 md:px-6 py-2.5 md:py-3 rounded-xl font-bold hover:shadow-xl hover:shadow-primary/30 transition-all active:scale-95 w-full sm:w-auto">
+<span class="material-symbols-outlined text-sm md:text-base">add_circle</span>
 <span>Book New Session</span>
 </button>
 </div>
 <!-- Dashboard Grid -->
-<div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
+<div class="flex flex-col xl:flex-row gap-6">
+<!-- Main Dashboard Layout (Left Side 2xl, Right side 1xl) -->
+<div class="flex-1 space-y-6">
+<!-- Upcoming Appointments Section (formerly column 1) & Prescribed Treatments -->
+<div class="flex flex-col lg:flex-row xl:flex-col gap-6">
 <!-- Next Appointment Card -->
-<div class="xl:col-span-1 flex flex-col gap-4 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-primary/5 shadow-sm">
+<div class="flex-1 flex flex-col gap-4 bg-white dark:bg-slate-900 p-4 md:p-6 rounded-2xl border border-primary/5 shadow-sm">
 <div class="flex items-center justify-between">
 <h3 class="font-bold text-lg text-slate-800 dark:text-slate-200">Next Appointment</h3>
 <span class="bg-primary/10 text-primary px-2 py-1 rounded-md text-[10px] font-bold uppercase tracking-widest">Upcoming</span>
@@ -136,7 +142,7 @@
 </div>
 </div>
 <!-- Prescribed Treatments Section (Digitized version) -->
-<div class="xl:col-span-2 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-primary/5 shadow-sm">
+<div class="flex-[2] bg-white dark:bg-slate-900 p-4 md:p-6 rounded-2xl border border-primary/5 shadow-sm">
 <div class="flex items-center justify-between mb-6">
 <h3 class="font-bold text-lg text-slate-800 dark:text-slate-200">Prescribed Treatments</h3>
 <a class="text-primary text-sm font-semibold hover:underline" href="#">View All</a>
@@ -196,8 +202,9 @@
 </div>
 </div>
 </div>
+</div>
 <!-- My Courses Section -->
-<div class="xl:col-span-2 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-primary/5 shadow-sm">
+<div class="bg-white dark:bg-slate-900 p-4 md:p-6 rounded-2xl border border-primary/5 shadow-sm">
 <div class="flex items-center justify-between mb-6">
 <h3 class="font-bold text-lg text-slate-800 dark:text-slate-200">Active Courses</h3>
 <div class="flex gap-2">
@@ -240,8 +247,9 @@
 </div>
 </div>
 </div>
-<!-- Health History Column -->
-<div class="xl:col-span-1 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-primary/5 shadow-sm">
+</div>
+<!-- Health History Column (Right sidebar block on XL) -->
+<div class="w-full xl:w-80 shrink-0 bg-white dark:bg-slate-900 p-4 md:p-6 rounded-2xl border border-primary/5 shadow-sm h-fit">
 <h3 class="font-bold text-lg text-slate-800 dark:text-slate-200 mb-6">Recent History</h3>
 <div class="space-y-6 relative before:absolute before:left-6 before:top-2 before:bottom-2 before:w-px before:bg-primary/10">
 <div class="relative pl-10">

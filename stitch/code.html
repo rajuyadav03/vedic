@@ -46,207 +46,210 @@
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
 <div class="relative flex min-h-screen w-full flex-col">
 <!-- Navigation -->
-<header class="sticky top-0 z-50 w-full border-b border-white/10 bg-background-dark/80 backdrop-blur-md px-6 md:px-16 py-4">
-<div class="max-w-7xl mx-auto flex items-center justify-between">
-<div class="flex items-center gap-3">
-<div class="flex items-center justify-center size-10 rounded-lg bg-primary/20 text-primary">
-<span class="material-symbols-outlined text-3xl">local_fire_department</span>
+<header class="sticky top-0 z-50 w-full border-b border-white/10 bg-background-dark/80 backdrop-blur-md px-4 md:px-6 md:px-16 py-3 md:py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+<div class="flex items-center gap-2 md:gap-3">
+<button class="md:hidden p-2 -ml-2 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">menu</span>
+</button>
+<div class="flex items-center justify-center size-8 md:size-10 rounded-lg bg-primary/20 text-primary shrink-0">
+<span class="material-symbols-outlined text-2xl md:text-3xl">local_fire_department</span>
 </div>
-<div>
-<h2 class="text-xl font-black tracking-tighter uppercase">Vaidik <span class="text-primary">Niramay</span></h2>
-<p class="text-[10px] uppercase tracking-[0.2em] text-slate-400 leading-none">Sacred Healing Arts</p>
+<div class="hidden sm:block">
+<h2 class="text-lg md:text-xl font-black tracking-tighter uppercase whitespace-nowrap">Vaidik <span class="text-primary">Niramay</span></h2>
+<p class="text-[8px] md:text-[10px] uppercase tracking-[0.2em] text-slate-400 leading-none">Sacred Healing Arts</p>
 </div>
 </div>
-<nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+<nav class="hidden md:flex items-center gap-6 lg:gap-8 text-xs lg:text-sm font-medium tracking-wide">
 <a class="hover:text-primary transition-colors" href="#">Home</a>
 <a class="hover:text-primary transition-colors" href="#">Treatments</a>
 <a class="hover:text-primary transition-colors" href="#">Academy</a>
 <a class="hover:text-primary transition-colors" href="#">Shop</a>
 </nav>
-<div class="flex items-center gap-3">
-<button class="p-2 hover:bg-white/5 rounded-full transition-colors">
-<span class="material-symbols-outlined">search</span>
+<div class="flex items-center gap-1 md:gap-3 shrink-0">
+<button class="p-1.5 md:p-2 hover:bg-white/5 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-sm md:text-base">search</span>
 </button>
-<button class="p-2 hover:bg-white/5 rounded-full transition-colors">
-<span class="material-symbols-outlined">shopping_bag</span>
+<button class="p-1.5 md:p-2 hover:bg-white/5 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-sm md:text-base">shopping_bag</span>
 </button>
-<button class="hidden md:flex items-center justify-center px-5 py-2 bg-primary hover:bg-primary/90 rounded-full text-white text-sm font-bold transition-all transform hover:scale-105">
-                        Consult Now
-                    </button>
+<button class="flex items-center justify-center px-4 md:px-5 py-1.5 md:py-2 bg-primary hover:bg-primary/90 rounded-full text-white text-xs md:text-sm font-bold transition-all transform hover:scale-105">
+                        Consult<span class="hidden sm:inline"> Now</span>
+</button>
 </div>
 </div>
 </header>
 <!-- Hero Section -->
-<section class="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+<section class="relative min-h-[80vh] md:min-h-[90vh] flex flex-col items-center justify-center text-center px-4 md:px-6 overflow-hidden">
 <div class="absolute inset-0 z-0 overflow-hidden">
-<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] flame-glow rounded-full blur-[100px]"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[800px] md:h-[800px] flame-glow rounded-full blur-[50px] md:blur-[100px]"></div>
 <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-background-dark to-transparent"></div>
 </div>
-<div class="relative z-10 max-w-4xl mx-auto space-y-8">
-<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs font-bold uppercase tracking-widest animate-pulse">
-<span class="material-symbols-outlined text-sm">verified_user</span>
-                    Ancient Wisdom Meets Modern Science
-                </div>
-<h1 class="text-5xl md:text-8xl font-black leading-none tracking-tighter">
+<div class="relative z-10 max-w-4xl mx-auto space-y-6 md:space-y-8 mt-10 md:mt-0">
+<div class="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1 md:px-4 md:py-1.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-[10px] md:text-xs font-bold uppercase tracking-widest animate-pulse">
+<span class="material-symbols-outlined text-xs md:text-sm">verified_user</span>
+<span class="text-center">Ancient Wisdom Meets Modern Science</span>
+</div>
+<h1 class="text-4xl sm:text-5xl md:text-8xl font-black leading-none tracking-tighter">
                     AWAKEN YOUR <br/>
 <span class="text-gradient-fire">INNER HEALING</span>
 </h1>
-<p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">
+<p class="text-base sm:text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed px-2">
                     Experience the profound synergy of ancient Vedic traditions and Lajpatrai Mehra's Neurotherapy. A journey beyond medicine into total wellness.
                 </p>
-<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-<button class="w-full sm:w-auto px-10 py-4 bg-primary text-white rounded-full font-bold text-lg hover:shadow-[0_0_30px_rgba(242,13,13,0.4)] transition-all">
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 md:gap-4 pt-2 md:pt-4 w-full sm:w-auto px-4 sm:px-0">
+<button class="w-full sm:w-auto px-6 py-3.5 md:px-10 md:py-4 bg-primary text-white rounded-full font-bold text-sm md:text-lg hover:shadow-[0_0_30px_rgba(242,13,13,0.4)] transition-all">
                         Book a Consultation
                     </button>
-<button class="w-full sm:w-auto px-10 py-4 border border-white/10 hover:bg-white/5 text-white rounded-full font-bold text-lg transition-all">
+<button class="w-full sm:w-auto px-6 py-3.5 md:px-10 md:py-4 border border-white/10 hover:bg-white/5 text-white rounded-full font-bold text-sm md:text-lg transition-all">
                         Explore Academy
                     </button>
 </div>
 </div>
-<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500">
-<span class="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
-<span class="material-symbols-outlined animate-bounce">expand_more</span>
+<div class="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 text-slate-500">
+<span class="text-[8px] md:text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+<span class="material-symbols-outlined text-sm md:text-base animate-bounce">expand_more</span>
 </div>
 </section>
 <!-- Neurotherapy Heritage -->
-<section class="py-24 px-6 md:px-16 bg-white/5">
-<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-<div class="relative group">
-<div class="absolute -inset-4 bg-primary/20 rounded-2xl blur-2xl group-hover:bg-primary/30 transition-all"></div>
+<section class="py-16 md:py-24 px-4 md:px-6 lg:px-16 bg-white/5">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+<div class="relative group order-2 md:order-1">
+<div class="absolute -inset-2 md:-inset-4 bg-primary/20 rounded-2xl blur-xl md:blur-2xl group-hover:bg-primary/30 transition-all"></div>
 <div class="relative aspect-square md:aspect-[4/5] rounded-2xl overflow-hidden border border-white/10">
 <img alt="Dr. Lajpatrai Mehra portrait" class="w-full h-full object-cover" data-alt="Portrait of an elderly wise Indian doctor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADdCg1miOW-4FRE-oYl3FxqnKnDBLZ8Om_JhnC94uxKhI2t-RNgqfF-19-hBaE-Yv7BHNsEEPSnXKCrnBZuhaBlVab3TMFiU0xN9U4mqU9V1jsFhEluDh8Cs0cN2RPa2XUCYA43Krt-6jOAngOxMZnVQ1xTr_zdZNSeAokKkEGKT8fEPsIG1bc7Vpxwz9ZrkwfR8HlYAyqKxqw_pmiYXq8zeIwTtJN9bR-n8q5z3wPmzHkishWgtdgttEpXlllAOh0_Vlr7NDu3sZ7"/>
 </div>
-<div class="absolute -bottom-6 -right-6 p-8 bg-background-dark border border-white/10 rounded-2xl hidden lg:block">
-<p class="text-3xl font-black text-primary">60+</p>
-<p class="text-xs text-slate-400 uppercase tracking-widest">Years of Legacy</p>
+<div class="absolute -bottom-4 md:-bottom-6 -right-4 md:-right-6 p-4 md:p-8 bg-background-dark border border-white/10 rounded-xl md:rounded-2xl hidden sm:block">
+<p class="text-xl md:text-3xl font-black text-primary">60+</p>
+<p class="text-[10px] md:text-xs text-slate-400 uppercase tracking-widest whitespace-nowrap">Years of Legacy</p>
 </div>
 </div>
-<div class="space-y-6">
-<h2 class="text-primary text-sm font-bold uppercase tracking-[0.3em]">Heritage &amp; Legacy</h2>
-<h3 class="text-4xl md:text-5xl font-bold leading-tight">Dr. Lajpatrai Mehra</h3>
-<p class="text-slate-400 text-lg leading-relaxed italic">
+<div class="space-y-4 md:space-y-6 order-1 md:order-2">
+<h2 class="text-primary text-[10px] md:text-sm font-bold uppercase tracking-[0.3em]">Heritage &amp; Legacy</h2>
+<h3 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">Dr. Lajpatrai Mehra</h3>
+<p class="text-slate-400 text-base md:text-lg leading-relaxed italic">
                         "The human body is the best pharmacy ever created. My mission was to find the keys to unlock its natural healing power."
                     </p>
-<p class="text-slate-300 leading-relaxed">
+<p class="text-slate-300 text-sm md:text-base leading-relaxed">
                         Pioneer of Indian Neurotherapy, Dr. Mehra revolutionized holistic health by developing a system that stimulates internal organs through specific pressure points, balancing body chemicals without external medicine.
                     </p>
-<div class="pt-4">
-<button class="flex items-center gap-3 text-white font-bold group">
+<div class="pt-2 md:pt-4">
+<button class="flex items-center gap-2 md:gap-3 text-white font-bold group text-sm md:text-base">
 <span>Learn Our History</span>
-<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+<span class="material-symbols-outlined text-sm md:text-base group-hover:translate-x-2 transition-transform">arrow_forward</span>
 </button>
 </div>
 </div>
 </div>
 </section>
 <!-- Sacred Essentials (Shop) -->
-<section class="py-24 px-6 md:px-16">
+<section class="py-16 md:py-24 px-4 md:px-6 lg:px-16">
 <div class="max-w-7xl mx-auto">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-<div class="space-y-4">
-<h2 class="text-primary text-sm font-bold uppercase tracking-[0.3em]">Curation</h2>
-<h3 class="text-4xl md:text-5xl font-bold">Sacred Essentials</h3>
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 md:mb-16">
+<div class="space-y-2 md:space-y-4">
+<h2 class="text-primary text-[10px] md:text-sm font-bold uppercase tracking-[0.3em]">Curation</h2>
+<h3 class="text-3xl md:text-4xl lg:text-5xl font-bold">Sacred Essentials</h3>
 </div>
-<a class="px-6 py-2 border border-white/10 rounded-full text-sm font-bold hover:bg-white/5 transition-colors" href="#">View All Products</a>
+<a class="w-full sm:w-auto text-center px-6 py-2 border border-white/10 rounded-full text-xs md:text-sm font-bold hover:bg-white/5 transition-colors" href="#">View All Products</a>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
 <!-- Product 1 -->
 <div class="group cursor-pointer">
-<div class="relative aspect-square bg-white/5 rounded-2xl mb-4 overflow-hidden border border-white/5 group-hover:border-primary/30 transition-all">
+<div class="relative aspect-square bg-white/5 rounded-xl md:rounded-2xl mb-3 md:mb-4 overflow-hidden border border-white/5 group-hover:border-primary/30 transition-all">
 <img alt="Essential Oil" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Minimalist glass dropper bottle on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiVMDVeQjmFdKRyigSOpblavGYZVvoHNDlwYqN9cFzO1DQXfWTMxm-A5DQoB6_JOWFYnvN613w2XJhrEKcwOoefDtqJSbdNDvx0vMiNXknWTDb_848V28ezvsAJIHlFcJPSo1zFFbAUqAkgSC_oihnq-4GcaDA9qOFxAWA0IEkrVKqd99uyGdd9WHh1ir7UrD6nL4QifoWR5JnjKmTjIZXoz9-G6a9Aih3iaTYkkUBMXWUd-tFTkt-cZ3hvpgQPgWzPkWgHUOV6YEy"/>
-<button class="absolute bottom-4 right-4 size-10 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
-<span class="material-symbols-outlined">add_shopping_cart</span>
+<button class="absolute bottom-2 right-2 md:bottom-4 md:right-4 size-8 md:size-10 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all shadow-lg">
+<span class="material-symbols-outlined text-sm md:text-base">add_shopping_cart</span>
 </button>
 </div>
-<h4 class="font-bold text-lg mb-1">Prana Balance Oil</h4>
-<p class="text-slate-500 text-sm mb-2">Ayurvedic Blend • 30ml</p>
-<p class="text-primary font-bold">₹1,499</p>
+<h4 class="font-bold text-sm md:text-lg mb-0.5 md:mb-1 line-clamp-1">Prana Balance Oil</h4>
+<p class="text-slate-500 text-[10px] md:text-sm mb-1.5 md:mb-2 line-clamp-1">Ayurvedic Blend • 30ml</p>
+<p class="text-primary font-bold text-sm md:text-base">₹1,499</p>
 </div>
 <!-- Product 2 -->
 <div class="group cursor-pointer">
-<div class="relative aspect-square bg-white/5 rounded-2xl mb-4 overflow-hidden border border-white/5 group-hover:border-primary/30 transition-all">
+<div class="relative aspect-square bg-white/5 rounded-xl md:rounded-2xl mb-3 md:mb-4 overflow-hidden border border-white/5 group-hover:border-primary/30 transition-all">
 <img alt="Herbal Powder" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Ancient clay bowl with herbal powders" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJMgpWVGay7Bcvgow7s8R9TUaM1lICExATLBxQqnX9g75L2V72Rzl3IDQJWKhOBHUuW9VHFkD4UbMTQv7P5g25aMpd53nYrkfvBFL4D-8huxyRppMu5DooIP8sMch-3nDbuAJCLWJXgscbSu1oF9NTAo8FWUT8SYctCl8PL_qrIZ0VhdJ-lZGcPbRT3xYncuCAE4i7xjdEdqqFEdbO7CsvdwB-eKAlWB_rtH9XkrwCXZA5d3oAUCDFiCJyaesIjo0D5tkghwAUKBLA"/>
-<button class="absolute bottom-4 right-4 size-10 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
-<span class="material-symbols-outlined">add_shopping_cart</span>
+<button class="absolute bottom-2 right-2 md:bottom-4 md:right-4 size-8 md:size-10 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all shadow-lg">
+<span class="material-symbols-outlined text-sm md:text-base">add_shopping_cart</span>
 </button>
 </div>
-<h4 class="font-bold text-lg mb-1">Dhanvantari Churna</h4>
-<p class="text-slate-500 text-sm mb-2">Immunity Support • 250g</p>
-<p class="text-primary font-bold">₹850</p>
+<h4 class="font-bold text-sm md:text-lg mb-0.5 md:mb-1 line-clamp-1">Dhanvantari Churna</h4>
+<p class="text-slate-500 text-[10px] md:text-sm mb-1.5 md:mb-2 line-clamp-1">Immunity Support • 250g</p>
+<p class="text-primary font-bold text-sm md:text-base">₹850</p>
 </div>
 <!-- Product 3 -->
 <div class="group cursor-pointer">
-<div class="relative aspect-square bg-white/5 rounded-2xl mb-4 overflow-hidden border border-white/5 group-hover:border-primary/30 transition-all">
+<div class="relative aspect-square bg-white/5 rounded-xl md:rounded-2xl mb-3 md:mb-4 overflow-hidden border border-white/5 group-hover:border-primary/30 transition-all">
 <img alt="Copper Vessel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Elegant hammered copper water bottle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2tNdygpbazR1Gv7sBp9Ka3A2YDXUHUuy01PBMRol8r5uVV-f2duEgFFolfxY6FJrLTmqcQlEk-M6-WzSoyFkVlgH-d9n-ezmQgJeA5dpOJ4-yNAbb5K9EYfR0kOtyTikbTMsVCMXURpV2lssh77YblZOXzh6cFO8m3fliKJ6UVVYvOH69VnWOodQFjxNWhqeo4gD7zbl26GEstiIEbzWh07uwtMDek5pZSdWJhU4slnJHYUBtPoL5G8RLkUljpRiR12DDjcB2xljz"/>
-<button class="absolute bottom-4 right-4 size-10 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
-<span class="material-symbols-outlined">add_shopping_cart</span>
+<button class="absolute bottom-2 right-2 md:bottom-4 md:right-4 size-8 md:size-10 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all shadow-lg">
+<span class="material-symbols-outlined text-sm md:text-base">add_shopping_cart</span>
 </button>
 </div>
-<h4 class="font-bold text-lg mb-1">Sacred Copper Jug</h4>
-<p class="text-slate-500 text-sm mb-2">Hand-Crafted • 1.5L</p>
-<p class="text-primary font-bold">₹2,200</p>
+<h4 class="font-bold text-sm md:text-lg mb-0.5 md:mb-1 line-clamp-1">Sacred Copper Jug</h4>
+<p class="text-slate-500 text-[10px] md:text-sm mb-1.5 md:mb-2 line-clamp-1">Hand-Crafted • 1.5L</p>
+<p class="text-primary font-bold text-sm md:text-base">₹2,200</p>
 </div>
 <!-- Product 4 -->
 <div class="group cursor-pointer">
-<div class="relative aspect-square bg-white/5 rounded-2xl mb-4 overflow-hidden border border-white/5 group-hover:border-primary/30 transition-all">
+<div class="relative aspect-square bg-white/5 rounded-xl md:rounded-2xl mb-3 md:mb-4 overflow-hidden border border-white/5 group-hover:border-primary/30 transition-all">
 <img alt="Incense Sticks" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Traditional incense sticks with glowing tip" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcLwxJ2pF7crFGLI4WGhxXNzDllcNlEii_wFoy9eagCKJPnSCAY11hdN8JBdpKLj4R_iFgAEjFdyhf-jUWkaz6YXBozIGKsynj5bexpBWUbzyVhPGJki5uKP_oaAvK6iwPjvzyygF_1fhTTRcCUGAS_tlqhBlD8zjWT5UfwfWcphf5gpK3I6MSNeeQL-Z8dpkTXdsQtSpWO0rQFIVm2dUAipkzUhH_pxtlM0pZ53GBzevNNhk409dwevdrdb57xq07Bv0RhAi41wZg"/>
-<button class="absolute bottom-4 right-4 size-10 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
-<span class="material-symbols-outlined">add_shopping_cart</span>
+<button class="absolute bottom-2 right-2 md:bottom-4 md:right-4 size-8 md:size-10 bg-white text-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all shadow-lg">
+<span class="material-symbols-outlined text-sm md:text-base">add_shopping_cart</span>
 </button>
 </div>
-<h4 class="font-bold text-lg mb-1">Meditative Sandalwood</h4>
-<p class="text-slate-500 text-sm mb-2">Pure Mysore • 40 Sticks</p>
-<p class="text-primary font-bold">₹499</p>
+<h4 class="font-bold text-sm md:text-lg mb-0.5 md:mb-1 line-clamp-1">Meditative Sandalwood</h4>
+<p class="text-slate-500 text-[10px] md:text-sm mb-1.5 md:mb-2 line-clamp-1">Pure Mysore • 40 Sticks</p>
+<p class="text-primary font-bold text-sm md:text-base">₹499</p>
 </div>
 </div>
 </div>
 </section>
 <!-- Academy Section -->
-<section class="py-24 px-6 md:px-16 bg-primary/5 border-y border-primary/10">
+<section class="py-16 md:py-24 px-4 md:px-6 lg:px-16 bg-primary/5 border-y border-primary/10">
 <div class="max-w-7xl mx-auto">
-<div class="grid lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-5 space-y-8">
-<h2 class="text-primary text-sm font-bold uppercase tracking-[0.3em]">Education</h2>
-<h3 class="text-4xl md:text-5xl font-bold leading-tight">Ancient Wisdom Academy</h3>
-<p class="text-slate-400 text-lg">Master the art of Indian Neurotherapy through our certified professional courses designed for the modern healer.</p>
-<div class="space-y-6">
-<div class="flex gap-4">
-<div class="size-12 rounded-lg bg-primary/20 flex flex-none items-center justify-center text-primary">
-<span class="material-symbols-outlined">school</span>
+<div class="grid lg:grid-cols-12 gap-10 md:gap-12 items-center">
+<div class="lg:col-span-5 space-y-6 md:space-y-8">
+<h2 class="text-primary text-[10px] md:text-sm font-bold uppercase tracking-[0.3em]">Education</h2>
+<h3 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">Ancient Wisdom Academy</h3>
+<p class="text-slate-400 text-sm md:text-lg text-balance">Master the art of Indian Neurotherapy through our certified professional courses designed for the modern healer.</p>
+<div class="space-y-4 md:space-y-6">
+<div class="flex gap-3 md:gap-4 items-center">
+<div class="size-10 md:size-12 rounded-lg bg-primary/20 flex flex-none items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg md:text-2xl">school</span>
 </div>
 <div>
-<h4 class="font-bold text-xl">Diploma in Neurotherapy</h4>
-<p class="text-slate-500">Comprehensive 1-year professional program</p>
+<h4 class="font-bold text-base md:text-xl line-clamp-1">Diploma in Neurotherapy</h4>
+<p class="text-slate-500 text-[10px] md:text-sm">Comprehensive 1-year professional program</p>
 </div>
 </div>
-<div class="flex gap-4">
-<div class="size-12 rounded-lg bg-primary/20 flex flex-none items-center justify-center text-primary">
-<span class="material-symbols-outlined">self_improvement</span>
+<div class="flex gap-3 md:gap-4 items-center">
+<div class="size-10 md:size-12 rounded-lg bg-primary/20 flex flex-none items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg md:text-2xl">self_improvement</span>
 </div>
 <div>
-<h4 class="font-bold text-xl">Self-Healing Intensive</h4>
-<p class="text-slate-500">4-week course for personal wellness</p>
+<h4 class="font-bold text-base md:text-xl line-clamp-1">Self-Healing Intensive</h4>
+<p class="text-slate-500 text-[10px] md:text-sm">4-week course for personal wellness</p>
 </div>
 </div>
 </div>
-<button class="px-8 py-4 bg-white text-black rounded-full font-bold hover:bg-slate-200 transition-all">
+<button class="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-white text-black rounded-full font-bold text-sm md:text-base hover:bg-slate-200 transition-all shadow-xl">
                             Browse All Courses
                         </button>
 </div>
-<div class="lg:col-span-7 grid grid-cols-2 gap-4">
-<div class="space-y-4">
-<div class="aspect-[3/4] rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+<div class="lg:col-span-7 grid grid-cols-2 gap-3 md:gap-4 mt-8 lg:mt-0">
+<div class="space-y-3 md:space-y-4">
+<div class="aspect-[3/4] rounded-xl md:rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
 <img alt="Yoga Studio" class="w-full h-full object-cover" data-alt="Zen yoga studio with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDavS1hnbIXk-mmm-8E-Bxjf0HepsX0cfZJjpKsHNv-KB25XqDewIgqQrVgRkJrpNT2ANb0TNIGhtpHYLzpxeKG59KNJrycaVAyqhRZ13u_X1ADG5AfRompA2PZOJzsf1Mb1g1KbQF_DJevBMA2GZb9Ne5dmci19rIOtTG6hlw_tfjnKp_JWSRDRQn1kULqGXIck0ID8xgKa3WkQZVMnVYw4C3FYlETFTzpNNTlm2Rf9_bFCi3alRVGlpgoOIG7CwBwahPG7dS3_NYO"/>
 </div>
-<div class="aspect-square rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+<div class="aspect-square rounded-xl md:rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
 <img alt="Academy Class" class="w-full h-full object-cover" data-alt="Close up of spiritual study materials" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANBi_FEczGuKHYhD22J3ne5nszZtxqmOvrZInUQxvFHnmXFpH7Wr5WrRd6qgtZpgtRFua9-np-mcLgDsRVcFLn7OwUDZBlpb1WcdlJfCkgCV1ab5HXvowSvUC90ZUSI26XrCoKnZqwvm50ueZm2MzjGWTG2yB4zMkk4GjgeQa4mZIsTcKW12Va_pWTo9Tf6bQ6M1_BE6reyCxJs01QFIDXaal_aNngS6gpJf-bSNEKHKOOXHGXRYFFer0g_r1fHRheDRBtcqwpFKKu"/>
 </div>
 </div>
-<div class="space-y-4 pt-12">
-<div class="aspect-square rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+<div class="space-y-3 md:space-y-4 pt-8 md:pt-12">
+<div class="aspect-square rounded-xl md:rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
 <img alt="Herbs" class="w-full h-full object-cover" data-alt="Traditional medicinal herbs in wooden bowls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPYEKchtlHjKXo69w-RqnOPrgyFo2-89sbJOT5upNNf6ESW_X4ZYiFKdQaY6iw7qbFPMC0nSoLfpRdMm1-QSm7wuVMBWMP1kYye54Nfjs46t33Z26iZzWL1pIIx5dySjT_hROdTsrJuS04e6ERtpNW1sxTPO2P_5qWYrbyDaU7X2Dhw1M5uBYoR3Ei2M61dtE2WjzuK_S1aUX2k81mHiiQ3uqORIdGiWvExZCu653gz37MLCUVtYFsxXG9ue9UA_vAJ11g_wipggP_"/>
 </div>
-<div class="aspect-[3/4] rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+<div class="aspect-[3/4] rounded-xl md:rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
 <img alt="Therapy Session" class="w-full h-full object-cover" data-alt="Calm spa treatment setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFWbykmgnrPdfXxDEE8aFgnM7sjpW1y-Wfqyk-FSbdRuIlNq2LRgMAgRFcYwLGrQ_BlOgAfzT55CKT5s0DBr6s_A9gdLvNs1naS1lIuyRDrw9Wqj_QA1Ur3SlKnGaqcZnE8eM7qBlsLWGONGCXOIDV2WfDIeyv_y1LA6OlbazxVXK3zybn_e-4m-qbAEnfxyqmc27GCQVOoCDJYfO_IZ29lQEFhYsFdCANW7tcTU-HFZFvGSIkdJdxc1fIN77pD4azZbcRV7DLxTf7"/>
 </div>
 </div>

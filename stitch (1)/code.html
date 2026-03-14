@@ -36,14 +36,17 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
 <!-- Top Navigation Bar -->
-<header class="sticky top-0 z-50 border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 lg:px-20 py-4">
-<div class="max-w-7xl mx-auto flex items-center justify-between gap-8">
+<header class="sticky top-0 z-50 border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 md:px-6 lg:px-20 py-3 md:py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between gap-4 md:gap-8">
 <!-- Logo -->
-<div class="flex items-center gap-3">
-<div class="bg-primary p-2 rounded-lg">
-<span class="material-symbols-outlined text-white">eco</span>
+<div class="flex items-center gap-2 md:gap-3">
+<button class="md:hidden p-2 -ml-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="bg-primary p-2 rounded-lg shrink-0">
+<span class="material-symbols-outlined text-white text-sm md:text-base">eco</span>
 </div>
-<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Vaidik Niramay</h2>
+<h2 class="text-base md:text-xl font-bold tracking-tight text-slate-900 dark:text-white hidden sm:block">Vaidik Niramay</h2>
 </div>
 <!-- Search Bar -->
 <div class="flex-1 max-w-md hidden md:block">
@@ -53,21 +56,21 @@
 </div>
 </div>
 <!-- Icons/Profile -->
-<div class="flex items-center gap-6">
+<div class="flex items-center gap-3 md:gap-6 shrink-0">
 <button class="relative p-2 text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">
-<span class="material-symbols-outlined">shopping_cart</span>
-<span class="absolute top-1 right-1 bg-accent-orange text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">3</span>
+<span class="material-symbols-outlined text-sm md:text-base">shopping_cart</span>
+<span class="absolute top-1 right-1 bg-accent-orange text-white text-[8px] md:text-[10px] font-bold px-1.5 py-0.5 rounded-full">3</span>
 </button>
-<button class="p-2 text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">
-<span class="material-symbols-outlined">favorite</span>
+<button class="p-2 text-slate-600 dark:text-slate-300 hover:text-primary transition-colors hidden sm:block">
+<span class="material-symbols-outlined text-sm md:text-base">favorite</span>
 </button>
-<div class="h-10 w-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center overflow-hidden">
+<div class="h-8 w-8 md:h-10 md:w-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center overflow-hidden shrink-0">
 <img alt="Profile" class="w-full h-full object-cover" data-alt="User profile avatar illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGXjh7gDlhyIrcQ7BOtm2KiXxD1s8ETxdtJp0G6pnBvhzGulyMKoOJpOHRgWkAHzcMDLUagDWD4AXcYchi8J-4rVEhiJYs6QlxVypbTuXXEGH2TLxVbBjmn74T7fp4onIJ7X36DWcSMKoyU8wv40xvEk4bsyF1X2tLf7Rw1shojy4Y-pXDmvLyzBCpxyF2obzEM-F2I_HMTb96q-UAhRV8UwAvNA3Y6k9_dLWVX6s2c2DLu9RzTxIOeDAZd1YVYfkHEotjILtHE_Wo"/>
 </div>
 </div>
 </div>
 </header>
-<main class="max-w-7xl mx-auto px-6 lg:px-20 py-10">
+<main class="max-w-7xl mx-auto px-4 md:px-6 lg:px-20 py-6 md:py-10 text-center md:text-left">
 <!-- Hero Section -->
 <section class="relative rounded-3xl overflow-hidden mb-12 h-64 flex items-center bg-gradient-to-r from-background-dark to-primary/20 border border-primary/10">
 <div class="absolute inset-0 opacity-40 mix-blend-overlay">
@@ -83,24 +86,25 @@
 </div>
 </section>
 <!-- Filters & Sort -->
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
-<div class="flex flex-wrap gap-3">
-<button class="px-6 py-2 rounded-full bg-primary text-white text-sm font-medium">All Products</button>
-<button class="px-6 py-2 rounded-full bg-slate-100 dark:bg-card-dark text-slate-600 dark:text-slate-300 text-sm font-medium hover:bg-primary/10 transition-colors">Supplements</button>
-<button class="px-6 py-2 rounded-full bg-slate-100 dark:bg-card-dark text-slate-600 dark:text-slate-300 text-sm font-medium hover:bg-primary/10 transition-colors">Equipment</button>
-<button class="px-6 py-2 rounded-full bg-slate-100 dark:bg-card-dark text-slate-600 dark:text-slate-300 text-sm font-medium hover:bg-primary/10 transition-colors">Books</button>
-<button class="px-6 py-2 rounded-full bg-slate-100 dark:bg-card-dark text-slate-600 dark:text-slate-300 text-sm font-medium hover:bg-primary/10 transition-colors">Oils</button>
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 md:mb-8 gap-4 border-b border-primary/5 pb-4 md:pb-6">
+<div class="flex items-center gap-2 overflow-x-auto w-full sm:w-auto pb-2 sm:pb-0 scrollbar-hide shrink-0">
+<button class="px-4 py-2 rounded-xl bg-primary text-white text-sm font-bold shadow-md shadow-primary/20 shrink-0">All Products</button>
+<button class="px-4 py-2 rounded-xl bg-slate-100 dark:bg-card-dark text-slate-600 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors shrink-0">Bhasmas</button>
+<button class="px-4 py-2 rounded-xl bg-slate-100 dark:bg-card-dark text-slate-600 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors shrink-0">Copperwares</button>
+<button class="px-4 py-2 rounded-xl bg-slate-100 dark:bg-card-dark text-slate-600 dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors shrink-0">Oils</button>
 </div>
-<div class="flex items-center gap-4">
-<span class="text-sm text-slate-500">Sort by:</span>
-<button class="flex items-center gap-2 bg-slate-100 dark:bg-card-dark px-4 py-2 rounded-lg text-sm font-medium">
-                    Newest Arrival
-                    <span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
-</button>
+<div class="flex items-center gap-3 w-full sm:w-auto mt-2 sm:mt-0">
+<span class="text-sm text-slate-500 font-medium whitespace-nowrap hidden sm:inline">Sort by:</span>
+<select class="w-full sm:w-auto bg-slate-100 dark:bg-card-dark border-none rounded-xl py-2 px-4 text-sm font-semibold text-slate-700 dark:text-slate-200 focus:ring-2 focus:ring-primary/50 outline-none cursor-pointer">
+<option>Popularity</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Newest Arrivals</option>
+</select>
 </div>
 </div>
 <!-- Product Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
 <!-- Product 1: Ashwagandha Gold -->
 <div class="product-card-hover group relative flex flex-col bg-slate-50 dark:bg-card-dark rounded-2xl p-4 border border-transparent hover:border-primary/20 transition-all duration-300">
 <div class="relative h-64 w-full mb-4 overflow-hidden rounded-xl bg-background-dark/50">
@@ -110,14 +114,14 @@
 <span class="material-symbols-outlined text-lg">favorite</span>
 </button>
 </div>
-<div class="flex flex-col flex-1">
-<p class="text-xs text-primary font-semibold mb-1 uppercase tracking-widest">Supplements</p>
-<h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Ashwagandha Gold</h3>
-<p class="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">Enhance vitality and reduce stress with our premium root extract fortified with 24k gold bhasma.</p>
+<div class="flex flex-col flex-1 p-3 md:p-4">
+<p class="text-[10px] md:text-xs text-primary font-semibold mb-1 uppercase tracking-widest">Supplements</p>
+<h3 class="text-base md:text-lg font-bold mb-1 md:mb-2 group-hover:text-primary transition-colors line-clamp-1">Ashwagandha Gold</h3>
+<p class="text-[10px] md:text-sm text-slate-500 dark:text-slate-400 mb-2 md:mb-4 line-clamp-2">Enhance vitality and reduce stress with our premium root extract fortified with 24k gold bhasma.</p>
 <div class="mt-auto flex items-center justify-between">
-<span class="text-2xl font-bold">$45.00</span>
-<button class="bg-accent-orange hover:bg-accent-orange/90 text-white p-2.5 rounded-xl transition-all shadow-lg shadow-accent-orange/20 active:scale-95 flex items-center gap-2">
-<span class="material-symbols-outlined text-xl">shopping_bag</span>
+<span class="text-lg md:text-2xl font-bold">$45.00</span>
+<button class="bg-accent-orange hover:bg-accent-orange/90 text-white p-2 md:p-2.5 rounded-xl transition-all shadow-lg shadow-accent-orange/20 active:scale-95 flex items-center gap-2">
+<span class="material-symbols-outlined text-base md:text-xl">shopping_bag</span>
 </button>
 </div>
 </div>
@@ -130,14 +134,14 @@
 <span class="material-symbols-outlined text-lg">favorite</span>
 </button>
 </div>
-<div class="flex flex-col flex-1">
-<p class="text-xs text-primary font-semibold mb-1 uppercase tracking-widest">Equipment</p>
-<h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Copper Water Jug</h3>
-<p class="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">Pure hammered copper for Tamra Jal. Naturally alkaline and anti-bacterial water storage.</p>
+<div class="flex flex-col flex-1 p-3 md:p-4">
+<p class="text-[10px] md:text-xs text-primary font-semibold mb-1 uppercase tracking-widest">Equipment</p>
+<h3 class="text-base md:text-lg font-bold mb-1 md:mb-2 group-hover:text-primary transition-colors line-clamp-1">Copper Water Jug</h3>
+<p class="text-[10px] md:text-sm text-slate-500 dark:text-slate-400 mb-2 md:mb-4 line-clamp-2">Pure hammered copper for Tamra Jal. Naturally alkaline and anti-bacterial water storage.</p>
 <div class="mt-auto flex items-center justify-between">
-<span class="text-2xl font-bold">$78.00</span>
-<button class="bg-accent-orange hover:bg-accent-orange/90 text-white p-2.5 rounded-xl transition-all shadow-lg shadow-accent-orange/20 active:scale-95 flex items-center gap-2">
-<span class="material-symbols-outlined text-xl">shopping_bag</span>
+<span class="text-lg md:text-2xl font-bold">$78.00</span>
+<button class="bg-accent-orange hover:bg-accent-orange/90 text-white p-2 md:p-2.5 rounded-xl transition-all shadow-lg shadow-accent-orange/20 active:scale-95 flex items-center gap-2">
+<span class="material-symbols-outlined text-base md:text-xl">shopping_bag</span>
 </button>
 </div>
 </div>
@@ -151,14 +155,14 @@
 <span class="material-symbols-outlined text-lg">favorite</span>
 </button>
 </div>
-<div class="flex flex-col flex-1">
-<p class="text-xs text-primary font-semibold mb-1 uppercase tracking-widest">Oils</p>
-<h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Prana Balance Oil</h3>
-<p class="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">A soothing blend of Brahmi and Shankhpushpi for mental clarity and peaceful sleep.</p>
+<div class="flex flex-col flex-1 p-3 md:p-4">
+<p class="text-[10px] md:text-xs text-primary font-semibold mb-1 uppercase tracking-widest">Oils</p>
+<h3 class="text-base md:text-lg font-bold mb-1 md:mb-2 group-hover:text-primary transition-colors line-clamp-1">Prana Balance Oil</h3>
+<p class="text-[10px] md:text-sm text-slate-500 dark:text-slate-400 mb-2 md:mb-4 line-clamp-2">A soothing blend of Brahmi and Shankhpushpi for mental clarity and peaceful sleep.</p>
 <div class="mt-auto flex items-center justify-between">
-<span class="text-2xl font-bold">$32.00</span>
-<button class="bg-accent-orange hover:bg-accent-orange/90 text-white p-2.5 rounded-xl transition-all shadow-lg shadow-accent-orange/20 active:scale-95 flex items-center gap-2">
-<span class="material-symbols-outlined text-xl">shopping_bag</span>
+<span class="text-lg md:text-2xl font-bold">$32.00</span>
+<button class="bg-accent-orange hover:bg-accent-orange/90 text-white p-2 md:p-2.5 rounded-xl transition-all shadow-lg shadow-accent-orange/20 active:scale-95 flex items-center gap-2">
+<span class="material-symbols-outlined text-base md:text-xl">shopping_bag</span>
 </button>
 </div>
 </div>
@@ -171,14 +175,14 @@
 <span class="material-symbols-outlined text-lg">favorite</span>
 </button>
 </div>
-<div class="flex flex-col flex-1">
-<p class="text-xs text-primary font-semibold mb-1 uppercase tracking-widest">Books</p>
-<h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors">The Ayurvedic Way</h3>
-<p class="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">Complete guide to self-healing, dosha balancing, and holistic lifestyle management.</p>
+<div class="flex flex-col flex-1 p-3 md:p-4">
+<p class="text-[10px] md:text-xs text-primary font-semibold mb-1 uppercase tracking-widest">Books</p>
+<h3 class="text-base md:text-lg font-bold mb-1 md:mb-2 group-hover:text-primary transition-colors line-clamp-1">The Ayurvedic Way</h3>
+<p class="text-[10px] md:text-sm text-slate-500 dark:text-slate-400 mb-2 md:mb-4 line-clamp-2">Complete guide to self-healing, dosha balancing, and holistic lifestyle management.</p>
 <div class="mt-auto flex items-center justify-between">
-<span class="text-2xl font-bold">$24.99</span>
-<button class="bg-accent-orange hover:bg-accent-orange/90 text-white p-2.5 rounded-xl transition-all shadow-lg shadow-accent-orange/20 active:scale-95 flex items-center gap-2">
-<span class="material-symbols-outlined text-xl">shopping_bag</span>
+<span class="text-lg md:text-2xl font-bold">$24.99</span>
+<button class="bg-accent-orange hover:bg-accent-orange/90 text-white p-2 md:p-2.5 rounded-xl transition-all shadow-lg shadow-accent-orange/20 active:scale-95 flex items-center gap-2">
+<span class="material-symbols-outlined text-base md:text-xl">shopping_bag</span>
 </button>
 </div>
 </div>
@@ -186,19 +190,19 @@
 <!-- Product 5: Neem Bark Capsules -->
 <div class="product-card-hover group relative flex flex-col bg-slate-50 dark:bg-card-dark rounded-2xl p-4 border border-transparent hover:border-primary/20 transition-all duration-300">
 <div class="relative h-64 w-full mb-4 overflow-hidden rounded-xl bg-background-dark/50">
-<img alt="Neem Bark" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Supplement jar with neem leaves background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDMIhfCiCkI-33pP7DI3RE9329V7C6AFuQaSqTv0zJ-6egmA5_Na41u-8GuHwXrbi_FvPVwmd_F9CCy_gNREo5j4PGc0YBQq8dSa8cuCh2CCh83yfaeghQnPq6uLw7LHIz5r43pfPqhplTYmXeIrqxgqxLoq7gbgtGOoR_gZdOXGj5Sm9Mc8JgEJQppossrkj8WOrT1BYS0r82cRAjgZViFFq0QFpTXdpqegXiBbulR_aUihctrRh_QnRC9rKYgaNuSLCK_0P-ZFGr"/>
+<img alt="Neem Bark" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Supplement jar with neem leaves background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDMIhfCiCkI-33pP7DI3RE9329V7C6AFuQaSqTv0zJ-6egmA5_Na41u-8GuHwXrbi_FvPVbmd_F9CCy_gNREo5j4PGc0YBQq8dSa8cuCh2CCh83yfaeghQnPq6uLw7LHIz5r43pfPqhplTYmXeIrqxgqxLoq7gbgtGOoR_gZdOXGj5Sm9Mc8JgEJQppossrkj8WOrT1BYS0r82cRAjgZViFFq0QFpTXdpqegXiBbulR_aUihctrRh_QnRC9rKYgaNuSLCK_0P-ZFGr"/>
 <button class="absolute top-2 right-2 p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:text-primary transition-colors">
 <span class="material-symbols-outlined text-lg">favorite</span>
 </button>
 </div>
-<div class="flex flex-col flex-1">
-<p class="text-xs text-primary font-semibold mb-1 uppercase tracking-widest">Supplements</p>
-<h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Neem Bark Capsules</h3>
-<p class="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">Natural blood purifier and immune booster. Harvested from ancient Neem trees.</p>
+<div class="flex flex-col flex-1 p-3 md:p-4">
+<p class="text-[10px] md:text-xs text-primary font-semibold mb-1 uppercase tracking-widest">Supplements</p>
+<h3 class="text-base md:text-lg font-bold mb-1 md:mb-2 group-hover:text-primary transition-colors line-clamp-1">Neem Bark Capsules</h3>
+<p class="text-[10px] md:text-sm text-slate-500 dark:text-slate-400 mb-2 md:mb-4 line-clamp-2">Natural blood purifier and immune booster. Harvested from ancient Neem trees.</p>
 <div class="mt-auto flex items-center justify-between">
-<span class="text-2xl font-bold">$22.00</span>
-<button class="bg-accent-orange hover:bg-accent-orange/90 text-white p-2.5 rounded-xl transition-all shadow-lg shadow-accent-orange/20 active:scale-95 flex items-center gap-2">
-<span class="material-symbols-outlined text-xl">shopping_bag</span>
+<span class="text-lg md:text-2xl font-bold">$22.00</span>
+<button class="bg-accent-orange hover:bg-accent-orange/90 text-white p-2 md:p-2.5 rounded-xl transition-all shadow-lg shadow-accent-orange/20 active:scale-95 flex items-center gap-2">
+<span class="material-symbols-outlined text-base md:text-xl">shopping_bag</span>
 </button>
 </div>
 </div>
@@ -211,14 +215,14 @@
 <span class="material-symbols-outlined text-lg">favorite</span>
 </button>
 </div>
-<div class="flex flex-col flex-1">
-<p class="text-xs text-primary font-semibold mb-1 uppercase tracking-widest">Equipment</p>
-<h3 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Brass Mortar &amp; Pestle</h3>
-<p class="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">Traditional tool for preparing fresh herb pastes and spices. Handcrafted and heavy-duty.</p>
+<div class="flex flex-col flex-1 p-3 md:p-4">
+<p class="text-[10px] md:text-xs text-primary font-semibold mb-1 uppercase tracking-widest">Equipment</p>
+<h3 class="text-base md:text-lg font-bold mb-1 md:mb-2 group-hover:text-primary transition-colors line-clamp-1">Brass Mortar & Pestle</h3>
+<p class="text-[10px] md:text-sm text-slate-500 dark:text-slate-400 mb-2 md:mb-4 line-clamp-2">Heavyweight solid brass for traditional herb grinding and preparation.</p>
 <div class="mt-auto flex items-center justify-between">
-<span class="text-2xl font-bold">$55.00</span>
-<button class="bg-accent-orange hover:bg-accent-orange/90 text-white p-2.5 rounded-xl transition-all shadow-lg shadow-accent-orange/20 active:scale-95 flex items-center gap-2">
-<span class="material-symbols-outlined text-xl">shopping_bag</span>
+<span class="text-lg md:text-2xl font-bold">$54.00</span>
+<button class="bg-accent-orange hover:bg-accent-orange/90 text-white p-2 md:p-2.5 rounded-xl transition-all shadow-lg shadow-accent-orange/20 active:scale-95 flex items-center gap-2">
+<span class="material-symbols-outlined text-base md:text-xl">shopping_bag</span>
 </button>
 </div>
 </div>

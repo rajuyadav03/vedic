@@ -37,14 +37,42 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
 <div class="relative flex min-h-screen flex-col">
-<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
-<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-<div class="flex items-center gap-8">
-<div class="flex items-center gap-3">
-<div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white">
-<span class="material-symbols-outlined">local_fire_department</span>
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="container mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between gap-4">
+<div class="flex items-center gap-2 md:gap-3 text-primary">
+<button class="md:hidden p-2 -ml-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="size-8 md:size-10 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-xl md:text-2xl">spa</span>
 </div>
-<h2 class="text-xl font-black tracking-tight text-slate-900 dark:text-white">Vaidik Niramay</h2>
+<h1 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white hidden sm:block">Vaidik Niramay</h1>
+</div>
+<div class="flex-1 max-w-2xl hidden md:block">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full bg-slate-100 dark:bg-primary/5 border border-transparent focus:border-primary/20 rounded-full pl-12 pr-4 py-2 md:py-3 text-sm focus:ring-4 focus:ring-primary/10 transition-all outline-none text-slate-900 dark:text-white" placeholder="Search for herbs, oils, or wellness consultations..." type="text"/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white p-1 md:p-1.5 rounded-full hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined text-sm md:text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-2 md:gap-4 shrink-0">
+<div class="md:hidden flex">
+<button class="p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-primary/10 rounded-full transition-colors relative group">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">search</span>
+</button>
+</div>
+<button class="p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-primary/10 rounded-full transition-colors relative group hidden sm:block">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">favorite</span>
+<span class="absolute top-1.5 right-1.5 size-2 bg-primary rounded-full ring-2 ring-white dark:ring-background-dark hidden"></span>
+</button>
+<button class="p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-primary/10 rounded-full transition-colors relative group">
+<span class="material-symbols-outlined group-hover:text-primary transition-colors">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[10px] font-bold size-5 flex items-center justify-center rounded-full ring-2 ring-white dark:ring-background-dark shadow-sm">3</span>
+</button>
+<div class="h-8 w-8 md:h-10 md:w-10 rounded-full bg-cover bg-center border-2 border-primary/20 cursor-pointer ml-1 md:ml-2 shrink-0" data-alt="User profile portrait profile" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDI-OVtr4kXKlVI-4fwgfjg9VbxxAoDH88AFBwVf0ZsIpcnsCYbr5le8nW-cVJIX16Go2k0HjQ_hQ03bOHZQNt4h704QTSwL3CWbozX9hV9I8yoMbaVadVOG5lUgo7jucBfZTAd8CXM33aGgawGFxV0yE9mOy46vaZUIYRQ6cMDRSlT8INENgYb1Fvl7nz8BjM0ltSwsg6mXu2v2yAKtvpcE9fJN8J3i5qjFCuStWzkAMv2JUHdaiXbgk8qw0UEJ8Zp00DMbP39UwRb')"></div>
+</div>
 </div>
 <nav class="hidden items-center gap-6 md:flex">
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Supplements</a>
@@ -112,8 +140,8 @@
 <span class="material-symbols-outlined text-sm text-primary">verified</span>
 </button>
 </div>
-<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-<div class="group flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+<div class="group flex flex-col overflow-hidden rounded-2xl md:rounded-3xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:shadow-xl hover:shadow-primary/5">
 <div class="relative aspect-square overflow-hidden bg-primary/5">
 <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Bottles of premium ashwagandha golden powder supplements" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsSeaooD63ywuLENnnsDhyyj6l4iUSOfmRsDRFep0PTnm4ilJnB7vzixinTprzUev_fGm_2-WXvyX5rDgOu99ySwW2lTinu1uLu-LvMkdjqI8Wh6lMda4B4whH_17iH_T81wzgNxmjC4FPDt72R_-9OMu1c1IDWm5-4Y4-jZBV0yNIab108c0fdSgfZnoJLTy1w0PbJY2aKc-fZG8cZ3gqDUuafAh5M-D5PuPX3qP9VnmfSia3WwkDTu5FxeNYNiSjL88ISwk9B_Jn');"></div>
 <div class="absolute top-3 left-3 flex items-center gap-1 rounded-full bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
@@ -122,12 +150,12 @@
 </div>
 <div class="flex flex-1 flex-col p-5">
 <div class="mb-1 text-xs font-bold text-primary">Supplements</div>
-<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Ashwagandha Gold</h3>
-<p class="mb-4 text-xs text-slate-500 line-clamp-2">Enhance vitality and reduce stress with Dr. Mehra's proprietary organic blend.</p>
+<h3 class="mb-1 md:mb-2 text-base md:text-lg font-bold text-slate-900 dark:text-white line-clamp-1">Ashwagandha Gold</h3>
+<p class="mb-2 md:mb-4 text-[10px] md:text-xs text-slate-500 line-clamp-2">Enhance vitality and reduce stress with Dr. Mehra's proprietary organic blend.</p>
 <div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
-<span class="text-xl font-black text-slate-900 dark:text-white">₹899</span>
-<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
-<span class="material-symbols-outlined">add_shopping_cart</span>
+<span class="text-lg md:text-xl font-black text-slate-900 dark:text-white">₹899</span>
+<button class="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined text-sm md:text-base">add_shopping_cart</span>
 </button>
 </div>
 </div>
@@ -138,12 +166,12 @@
 </div>
 <div class="flex flex-1 flex-col p-5">
 <div class="mb-1 text-xs font-bold text-primary">Equipment</div>
-<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Copper Water Jug</h3>
-<p class="mb-4 text-xs text-slate-500 line-clamp-2">Traditional copper vessel designed for overnight water purification and wellness.</p>
+<h3 class="mb-1 md:mb-2 text-base md:text-lg font-bold text-slate-900 dark:text-white line-clamp-1">Copper Water Jug</h3>
+<p class="mb-2 md:mb-4 text-[10px] md:text-xs text-slate-500 line-clamp-2">Traditional copper vessel designed for overnight water purification and wellness.</p>
 <div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
-<span class="text-xl font-black text-slate-900 dark:text-white">₹1,250</span>
-<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
-<span class="material-symbols-outlined">add_shopping_cart</span>
+<span class="text-lg md:text-xl font-black text-slate-900 dark:text-white">₹1,250</span>
+<button class="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined text-sm md:text-base">add_shopping_cart</span>
 </button>
 </div>
 </div>
@@ -157,12 +185,12 @@
 </div>
 <div class="flex flex-1 flex-col p-5">
 <div class="mb-1 text-xs font-bold text-primary">Equipment</div>
-<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Yoga Meditation Mat</h3>
-<p class="mb-4 text-xs text-slate-500 line-clamp-2">Eco-friendly natural rubber and jute blend for the perfect meditation grip.</p>
+<h3 class="mb-1 md:mb-2 text-base md:text-lg font-bold text-slate-900 dark:text-white line-clamp-1">Yoga Meditation Mat</h3>
+<p class="mb-2 md:mb-4 text-[10px] md:text-xs text-slate-500 line-clamp-2">Eco-friendly natural rubber and jute blend for the perfect meditation grip.</p>
 <div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
-<span class="text-xl font-black text-slate-900 dark:text-white">₹2,499</span>
-<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
-<span class="material-symbols-outlined">add_shopping_cart</span>
+<span class="text-lg md:text-xl font-black text-slate-900 dark:text-white">₹2,499</span>
+<button class="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined text-sm md:text-base">add_shopping_cart</span>
 </button>
 </div>
 </div>
@@ -173,12 +201,12 @@
 </div>
 <div class="flex flex-1 flex-col p-5">
 <div class="mb-1 text-xs font-bold text-primary">Books</div>
-<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Ayurveda Guide Book</h3>
-<p class="mb-4 text-xs text-slate-500 line-clamp-2">A comprehensive journey into healing rituals and herbal wisdom for modern living.</p>
+<h3 class="mb-1 md:mb-2 text-base md:text-lg font-bold text-slate-900 dark:text-white line-clamp-1">Ayurveda Guide Book</h3>
+<p class="mb-2 md:mb-4 text-[10px] md:text-xs text-slate-500 line-clamp-2">A comprehensive journey into healing rituals and herbal wisdom for modern living.</p>
 <div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
-<span class="text-xl font-black text-slate-900 dark:text-white">₹450</span>
-<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
-<span class="material-symbols-outlined">add_shopping_cart</span>
+<span class="text-lg md:text-xl font-black text-slate-900 dark:text-white">₹450</span>
+<button class="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined text-sm md:text-base">add_shopping_cart</span>
 </button>
 </div>
 </div>
@@ -192,12 +220,12 @@
 </div>
 <div class="flex flex-1 flex-col p-5">
 <div class="mb-1 text-xs font-bold text-primary">Supplements</div>
-<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Organic Triphala</h3>
-<p class="mb-4 text-xs text-slate-500 line-clamp-2">Detoxify and rejuvenate your digestive system with this ancient triple-herb formula.</p>
+<h3 class="mb-1 md:mb-2 text-base md:text-lg font-bold text-slate-900 dark:text-white line-clamp-1">Organic Triphala</h3>
+<p class="mb-2 md:mb-4 text-[10px] md:text-xs text-slate-500 line-clamp-2">Detoxify and rejuvenate your digestive system with this ancient triple-herb formula.</p>
 <div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
-<span class="text-xl font-black text-slate-900 dark:text-white">₹650</span>
-<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
-<span class="material-symbols-outlined">add_shopping_cart</span>
+<span class="text-lg md:text-xl font-black text-slate-900 dark:text-white">₹650</span>
+<button class="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined text-sm md:text-base">add_shopping_cart</span>
 </button>
 </div>
 </div>
@@ -208,12 +236,12 @@
 </div>
 <div class="flex flex-1 flex-col p-5">
 <div class="mb-1 text-xs font-bold text-primary">Sacred Space</div>
-<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Pure Sandalwood Incense</h3>
-<p class="mb-4 text-xs text-slate-500 line-clamp-2">Hand-rolled incense sticks made from sustainably sourced Mysore sandalwood.</p>
+<h3 class="mb-1 md:mb-2 text-base md:text-lg font-bold text-slate-900 dark:text-white line-clamp-1">Pure Sandalwood Incense</h3>
+<p class="mb-2 md:mb-4 text-[10px] md:text-xs text-slate-500 line-clamp-2">Hand-rolled incense sticks made from sustainably sourced Mysore sandalwood.</p>
 <div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
-<span class="text-xl font-black text-slate-900 dark:text-white">₹320</span>
-<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
-<span class="material-symbols-outlined">add_shopping_cart</span>
+<span class="text-lg md:text-xl font-black text-slate-900 dark:text-white">₹320</span>
+<button class="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined text-sm md:text-base">add_shopping_cart</span>
 </button>
 </div>
 </div>
@@ -224,12 +252,12 @@
 </div>
 <div class="flex flex-1 flex-col p-5">
 <div class="mb-1 text-xs font-bold text-primary">Equipment</div>
-<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Hand-beaten Singing Bowl</h3>
-<p class="mb-4 text-xs text-slate-500 line-clamp-2">Authentic 7-metal resonance bowl for sound healing and deep meditation.</p>
+<h3 class="mb-1 md:mb-2 text-base md:text-lg font-bold text-slate-900 dark:text-white line-clamp-1">Hand-beaten Singing Bowl</h3>
+<p class="mb-2 md:mb-4 text-[10px] md:text-xs text-slate-500 line-clamp-2">Authentic 7-metal resonance bowl for sound healing and deep meditation.</p>
 <div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
-<span class="text-xl font-black text-slate-900 dark:text-white">₹3,999</span>
-<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
-<span class="material-symbols-outlined">add_shopping_cart</span>
+<span class="text-lg md:text-xl font-black text-slate-900 dark:text-white">₹3,999</span>
+<button class="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined text-sm md:text-base">add_shopping_cart</span>
 </button>
 </div>
 </div>
@@ -243,12 +271,12 @@
 </div>
 <div class="flex flex-1 flex-col p-5">
 <div class="mb-1 text-xs font-bold text-primary">Supplements</div>
-<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Calm Night Infusion</h3>
-<p class="mb-4 text-xs text-slate-500 line-clamp-2">A soothing blend of Jatamansi and Shankhpushpi for restorative sleep.</p>
+<h3 class="mb-1 md:mb-2 text-base md:text-lg font-bold text-slate-900 dark:text-white line-clamp-1">Calm Night Infusion</h3>
+<p class="mb-2 md:mb-4 text-[10px] md:text-xs text-slate-500 line-clamp-2">A soothing blend of Jatamansi and Shankhpushpi for restorative sleep.</p>
 <div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
-<span class="text-xl font-black text-slate-900 dark:text-white">₹540</span>
-<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
-<span class="material-symbols-outlined">add_shopping_cart</span>
+<span class="text-lg md:text-xl font-black text-slate-900 dark:text-white">₹540</span>
+<button class="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined text-sm md:text-base">add_shopping_cart</span>
 </button>
 </div>
 </div>
