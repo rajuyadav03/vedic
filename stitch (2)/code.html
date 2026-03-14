@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vaidik Niramay - Neurotherapy Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d0d", // Red from theme
+                        "accent-gold": "#FFD700",
+                        "accent-orange": "#FF8C00",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#1a0a0a", // Deepened for luxury feel
+                        "card-dark": "#2d1515",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .chakra-gradient-1 { background: linear-gradient(135deg, #FF4B2B 0%, #FF416C 100%); }
+        .chakra-gradient-2 { background: linear-gradient(135deg, #F37335 0%, #FDC830 100%); }
+        .chakra-gradient-3 { background: linear-gradient(135deg, #cac531 0%, #f3f9a7 100%); }
+        .premium-border { border: 1px solid rgba(255, 215, 0, 0.2); }
+        .premium-hover:hover { border: 1px solid rgba(255, 215, 0, 0.5); transform: translateY(-2px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-white/10 bg-background-dark/80 backdrop-blur-md px-6 lg:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl font-bold">architecture</span>
+<h1 class="text-white text-xl font-bold tracking-tight">Vaidik Niramay</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Neurotherapy</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Masterclasses</a>
+<a class="text-slate-300 hover:text-primary text-sm font-medium transition-colors" href="#">Our Method</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">search</span>
+<input class="bg-card-dark border-none rounded-lg pl-10 pr-4 py-2 text-sm w-64 focus:ring-1 focus:ring-primary/50 text-white placeholder:text-slate-500" placeholder="Search healing paths..." type="text"/>
+</div>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-card-dark text-white hover:bg-primary/20 transition-all">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                        Login
+                    </button>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-7xl mx-auto px-6 lg:px-20 py-10">
+<!-- Featured Masterclass -->
+<section class="mb-16">
+<div class="relative group rounded-2xl overflow-hidden aspect-video lg:aspect-[21/9] bg-slate-800 shadow-2xl">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Professional yoga practitioner in a deep meditative state at sunrise" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDgKlw4-X1meYmZwHIooZ8tu_9KV4yBKJ-LEVHxGtJGMtcmB26vonxXbm6cM8FRnCDI7xwe_P-WcBLPVLcn4aFjusa4IrJXaiue1-w70Y2tE9NaIsGLzoak7niLGT9S4xo0u8jLQUYyrTU2AzljCUr-kjIMeJdwGma6PPaLllGdsodPkkdOm13E--GfYTYXKjZ-1EdBUUqUlFUxxPfAL0Gn1mKJzBrPORQWrbKltBLwyGIiOfXwRQcea43gvCrePU036ClOiB5vqOdH')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+<button class="group/play flex items-center justify-center rounded-full size-20 bg-primary/90 text-white hover:bg-primary hover:scale-110 transition-all shadow-2xl shadow-primary/40 mb-6">
+<span class="material-symbols-outlined text-4xl fill-1">play_arrow</span>
+</button>
+<span class="px-3 py-1 bg-accent-gold/20 text-accent-gold text-xs font-bold uppercase tracking-widest rounded-full border border-accent-gold/30 mb-4">Live Masterclass</span>
+<h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">The Science of Vedic Neurotherapy</h2>
+<p class="text-slate-200 text-lg max-w-2xl mb-8 leading-relaxed">Join Acharya Dev for an exclusive 2-hour session on activating the body's natural healing centers through neural stimulation.</p>
+<div class="w-full max-w-md bg-white/10 backdrop-blur-sm rounded-full h-1.5 mb-2 overflow-hidden">
+<div class="bg-accent-gold h-full w-1/3 shadow-[0_0_10px_#FFD700]"></div>
+</div>
+<div class="flex justify-between w-full max-w-md px-1 text-[10px] text-slate-400 font-bold uppercase tracking-tighter">
+<span>Started 0:45</span>
+<span>Ends in 1:15:00</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Chakra Categories -->
+<section class="mb-16">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-2xl font-bold text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-accent-gold">account_tree</span>
+                        Healing Pathways by Chakra
+                    </h3>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-6 scrollbar-hide no-scrollbar">
+<div class="flex flex-col items-center gap-3 min-w-[120px] group cursor-pointer">
+<div class="size-16 rounded-full flex items-center justify-center bg-card-dark border-2 border-red-500/30 group-hover:border-red-500 group-hover:shadow-[0_0_15px_rgba(239,68,68,0.4)] transition-all">
+<span class="material-symbols-outlined text-3xl text-red-500">brightness_low</span>
+</div>
+<span class="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">Root</span>
+</div>
+<div class="flex flex-col items-center gap-3 min-w-[120px] group cursor-pointer">
+<div class="size-16 rounded-full flex items-center justify-center bg-card-dark border-2 border-orange-500/30 group-hover:border-orange-500 group-hover:shadow-[0_0_15px_rgba(249,115,22,0.4)] transition-all">
+<span class="material-symbols-outlined text-3xl text-orange-500">flare</span>
+</div>
+<span class="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">Sacral</span>
+</div>
+<div class="flex flex-col items-center gap-3 min-w-[120px] group cursor-pointer">
+<div class="size-16 rounded-full flex items-center justify-center bg-card-dark border-2 border-yellow-500/30 group-hover:border-yellow-500 group-hover:shadow-[0_0_15px_rgba(234,179,8,0.4)] transition-all">
+<span class="material-symbols-outlined text-3xl text-yellow-500">wb_sunny</span>
+</div>
+<span class="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">Solar Plexus</span>
+</div>
+<div class="flex flex-col items-center gap-3 min-w-[120px] group cursor-pointer">
+<div class="size-16 rounded-full flex items-center justify-center bg-card-dark border-2 border-green-500/30 group-hover:border-green-500 group-hover:shadow-[0_0_15px_rgba(34,197,94,0.4)] transition-all">
+<span class="material-symbols-outlined text-3xl text-green-500">favorite</span>
+</div>
+<span class="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">Heart</span>
+</div>
+<div class="flex flex-col items-center gap-3 min-w-[120px] group cursor-pointer">
+<div class="size-16 rounded-full flex items-center justify-center bg-card-dark border-2 border-blue-500/30 group-hover:border-blue-500 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all">
+<span class="material-symbols-outlined text-3xl text-blue-500">graphic_eq</span>
+</div>
+<span class="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">Throat</span>
+</div>
+<div class="flex flex-col items-center gap-3 min-w-[120px] group cursor-pointer">
+<div class="size-16 rounded-full flex items-center justify-center bg-card-dark border-2 border-indigo-500/30 group-hover:border-indigo-500 group-hover:shadow-[0_0_15px_rgba(99,102,241,0.4)] transition-all">
+<span class="material-symbols-outlined text-3xl text-indigo-500">visibility</span>
+</div>
+<span class="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">Third Eye</span>
+</div>
+<div class="flex flex-col items-center gap-3 min-w-[120px] group cursor-pointer">
+<div class="size-16 rounded-full flex items-center justify-center bg-card-dark border-2 border-purple-500/30 group-hover:border-purple-500 group-hover:shadow-[0_0_15px_rgba(168,85,247,0.4)] transition-all">
+<span class="material-symbols-outlined text-3xl text-purple-500">auto_awesome</span>
+</div>
+<span class="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">Crown</span>
+</div>
+</div>
+</section>
+<!-- Premium Enrollment Grid -->
+<section class="mb-20">
+<div class="flex items-center justify-between mb-10">
+<h3 class="text-2xl font-bold text-white">Enrollment Opportunities</h3>
+<a class="text-primary hover:text-accent-orange font-bold text-sm underline underline-offset-4 decoration-2" href="#">View All Specializations</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Course Card 1 -->
+<div class="bg-card-dark rounded-xl overflow-hidden premium-border premium-hover transition-all">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Healthy organic meal representing digestive health" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXOOAAaYQSLw1VbiPa5njdngnbYAYxmjUnhsiB3Gy_-g0c5vhUFfb8G_2IQzFZ-Tpz83nPqdcuwAKs9Cxd1uD8JTZbdE_2ysG2ccGjPIDMvurP1QCRBpiazswgUwIXIHJGwlITeoKbEZTANk0iYaMo6XQXooeYQlFhjxX7u2NDDe7KOH9RsfOAq5-Lq0E5ds65LPJ25xh5nZlj0N5vjZFBZJ0AOcCC8ppU4D-kvpfB4wW0fiXlBZ1bwjjoK1YyHygR5QHZHuTQGshh')"></div>
+<div class="absolute top-4 left-4 bg-orange-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Digestive Wellness</div>
+<div class="absolute top-4 right-4 bg-background-dark/80 backdrop-blur-md text-accent-gold text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">star</span> 4.9
+                            </div>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold text-white mb-2 leading-tight">Digestive Disorders Specialist</h4>
+<p class="text-slate-400 text-sm mb-6 line-clamp-2">Master the ancient neuro-points for IBS, acid reflux, and chronic metabolic imbalances.</p>
+<div class="flex items-center justify-between mb-6">
+<div class="flex -space-x-2">
+<div class="size-8 rounded-full border-2 border-card-dark bg-slate-500 bg-cover" data-alt="Student profile thumbnail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQWqOhs0RG4siahNXDB9JmvhXd9ZZsH6ZTqkO7ToA_F5nosuRm7yQtslpcUbvzBbggGHNk9J6QvhtINw-DVrW9i5m6vF0Azacg3aHl2zCoQHznGc2ISP68Td6ntaaiWz-gGm7lUf-nmAFc8qqW1yGb7fCNDZ9bJqiYdAkNHVqRBwqZNXEEOaZgVi_15TafczYfOBSp6ecRJGoSFgvj0Zq4veocMieLIkoNK8uPjW8MT03EeRw5ON_aiAkmzCOqoOXyIOqXhmIjlaC1')"></div>
+<div class="size-8 rounded-full border-2 border-card-dark bg-slate-500 bg-cover" data-alt="Student profile thumbnail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDofOoV-Ezhd3zrP7EFsl980dDbeyI5fSAYIicOAwe76IWMSmpTSHncNKXdOXlcGU6CqYddXMAiwa4yIF2xavLkMImNS_r749yUIgwt8BPSIKk1FqWge3GTjMwnOd6vGa19fDZWHK6TqlOKht231IEP64zpLOr4woCYIlUowCS4bugPYGf52z78dXuJmyFtVLh4VOjQeDzuUFKcGQ2I3utCH0TvkJvvlkLiNT6b4n6jDUbGaxGPigt4tO2iZYHUmwD08YL8Jv3-PtGe')"></div>
+<div class="size-8 rounded-full border-2 border-card-dark bg-slate-500 flex items-center justify-center text-[10px] font-bold text-white">+1k</div>
+</div>
+<div class="text-right">
+<span class="text-xs text-slate-500 line-through">₹15,999</span>
+<p class="text-xl font-bold text-white">₹7,499</p>
+</div>
+</div>
+<button class="w-full bg-white/5 hover:bg-white/10 text-white border border-white/20 py-3 rounded-lg font-bold transition-all flex items-center justify-center gap-2 group">
+                                Enroll Now
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Course Card 2 -->
+<div class="bg-card-dark rounded-xl overflow-hidden premium-border premium-hover transition-all">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Peaceful person sleeping symbolizing restful management" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDss_lRtItM7qiEpJ2Lk-C0z69NDMgI1Tzt5VdkPs0-dDlB2cGpVep66H6X__3z_3QKBJ5Irl98zhUo_yB1RB43ANh1jgIameC5UVM0-IsRGasOKIEf9myPGeLoPTE4ctAHAdQ457BspNk5W36jXHhu3FTT1rjLQ_8Liq4ixlDtxEWLRuTBCVYeE5zF5sum3dLuyoPKamX-Y8EzREhPboPzbnlVrxfl0n9s4fg2yy2xcV00mMrVTF8LGGYaSi_Kx4EQ8GQL1bokK1KR')"></div>
+<div class="absolute top-4 left-4 bg-indigo-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Neurology</div>
+<div class="absolute top-4 right-4 bg-background-dark/80 backdrop-blur-md text-accent-gold text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">star</span> 5.0
+                            </div>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold text-white mb-2 leading-tight">Anxiety &amp; Sleep Management</h4>
+<p class="text-slate-400 text-sm mb-6 line-clamp-2">Learn to regulate the parasympathetic nervous system for instant stress relief and deep REM cycles.</p>
+<div class="flex items-center justify-between mb-6">
+<div class="flex -space-x-2">
+<div class="size-8 rounded-full border-2 border-card-dark bg-slate-500 bg-cover" data-alt="Student profile thumbnail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1tzN8SGgIsno4qD4EPHdZY1DCEfbs9Gio9_EpuGIg2X_EL69Vge7Q4zoZnkb8xifk2DSnd8hxhgPlT5WlbfZzxxhowHqhrJBr_gvJXcazI9UhFnGbofJW8jUEayCRm1d4UH4Pmv-lXR55y_cp8iMUgm-cltjXxzSNloC7dL3IdNbAl_hf2nziP660hFkwbvSDe8ZpOHEyKXRBaPfuO_LZf0yFvrJjgZD7Fln5Y9kwuwv-IiGXV8x2GHKSUAOgh9-tM8IgrIP_i14i')"></div>
+<div class="size-8 rounded-full border-2 border-card-dark bg-slate-500 bg-cover" data-alt="Student profile thumbnail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUW5RebXehy-xp-hMRrA61KmIvouq6J9dMneDORSpI6Rz0xr-eKu_BqrFF00uI9E1v3Y-G2Fn8736thwhbOc01fhhGkWp1LzsNb63oDTCYnVvMAqNwfRjYD8WJoUUAW6bTg5BQDkZqcuAUnKXCD3X5FzstX91UmMtfD7nTItmUxwW5-6sE_l9icdmZah2oZ-EK3baflu_A0w0Yg3PRbW_in0uA5tvY4t5fto20K5KVnxwSLwBZ5CFPwDFQX0Bj-FdFKAil_k4k-H4o')"></div>
+<div class="size-8 rounded-full border-2 border-card-dark bg-slate-500 flex items-center justify-center text-[10px] font-bold text-white">+800</div>
+</div>
+<div class="text-right">
+<span class="text-xs text-slate-500 line-through">₹12,499</span>
+<p class="text-xl font-bold text-white">₹5,999</p>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-3 rounded-lg font-bold hover:shadow-[0_0_20px_rgba(242,13,13,0.3)] transition-all flex items-center justify-center gap-2 group">
+                                Enroll Now
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Course Card 3 -->
+<div class="bg-card-dark rounded-xl overflow-hidden premium-border premium-hover transition-all">
+<div class="h-48 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Anatomy of human spine representing structural health" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBSj0GuL0PzsLqKb6fFsu25J0rlT7drd6l2ZaAKmtIIjQiEZ48444Vq9V_ogss9JM6ZyQ9HqVe4U0chLq1694niWM8pjpQN-fQPGnOW52HhXJ1Rz3Kze7XKVi772TRYRsYEqJz8bhRzwQsJ2h65ipXX3BVeCaEvh-8vpej94VGkyPcHcebJrtGcwcg3SpeUIkc8HWcrtHFK7joNjlT1QXl_ggRnlYC4E6nfldeUB_sEZty9CErIhEclTA9MPKpCDP01yblOtxY_VLL1')"></div>
+<div class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Structural</div>
+<div class="absolute top-4 right-4 bg-background-dark/80 backdrop-blur-md text-accent-gold text-xs font-bold px-2 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">star</span> 4.8
+                            </div>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold text-white mb-2 leading-tight">Advanced Pain Management</h4>
+<p class="text-slate-400 text-sm mb-6 line-clamp-2">Complete certification in structural alignment and nerve decompression techniques.</p>
+<div class="flex items-center justify-between mb-6">
+<div class="flex -space-x-2">
+<div class="size-8 rounded-full border-2 border-card-dark bg-slate-500 bg-cover" data-alt="Student profile thumbnail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB7gbzVBu32FLgYKJ-0i69hJlEdIsAFNx6gYhjPC-BfFVds8QKv0ygONO1vQP4N54Mr6yK-LPGdsXjTN1jpjPB7wefY1iLCVzxpptr_2vD0OPBy_8PQbUcg1KiyXbEZ1ZjZB7W7qvU20q_3MQpFKy9x3w_6-yCsKZwus1Chd6dNPPS1zvGZFLew4imK9RoWi2k7dXpKRObWZoZ5Z_0_LkAn8PFruWalKwcZbXgplWDdncZucFkLm-tMfXr2G4yrpL90et_Cvnbb5q8F')"></div>
+<div class="size-8 rounded-full border-2 border-card-dark bg-slate-500 bg-cover" data-alt="Student profile thumbnail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAk8C2Z_gdPErr7WrPDbpvUQ0BN6LyWP51j_LpSd6ZI-B_mffIHtjC8yl1_5bLEAkcDknP0vBDFyXWXKW03PRYcipnP7CDZbI_ElQiK192_8uwVHTzGr2nlvtPRWeWZW0AqaRyrSSUYkDqBzTgvzOTZqAnwpOQDcUAiZsOG1cjZyleejwiT9ir7RbAZq0gi7DA_J6cWU5xUoGN4SWb8DJn3FC21KINalVgZhmeUd-XKN9HSY86PjJ7Yr2TxGsHmVqjDtsxBSkKINd4y')"></div>
+<div class="size-8 rounded-full border-2 border-card-dark bg-slate-500 flex items-center justify-center text-[10px] font-bold text-white">+2k</div>
+</div>
+<div class="text-right">
+<span class="text-xs text-slate-500 line-through">₹24,999</span>
+<p class="text-xl font-bold text-white">₹12,999</p>
+</div>
+</div>
+<button class="w-full bg-white/5 hover:bg-white/10 text-white border border-white/20 py-3 rounded-lg font-bold transition-all flex items-center justify-center gap-2 group">
+                                Enroll Now
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial / Credibility -->
+<section class="bg-card-dark/40 border border-white/5 rounded-3xl p-8 md:p-12 mb-20 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-accent-orange/10 blur-[100px] rounded-full"></div>
+<span class="material-symbols-outlined text-5xl text-accent-gold mb-6">format_quote</span>
+<p class="text-2xl md:text-3xl font-medium text-slate-200 leading-relaxed max-w-4xl mx-auto mb-10 italic">
+                    "Neurotherapy is not just a treatment, it is the revival of the body's own pharmacy. Through Vaidik Niramay, we aim to put this power back into the hands of healers."
+                </p>
+<div class="flex flex-col items-center">
+<div class="size-16 rounded-full bg-slate-700 mb-4 border-2 border-accent-gold p-1">
+<div class="w-full h-full rounded-full bg-cover" data-alt="Acharya Dev, founder of the Academy" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_VZbvaZzVpGfjCyhga89nB5UwQ3R9rUfVmMu8XjUiVCflVAUij_Bvsu2HUswlPnZN7DenVQQOszYAZYsixlUuYwo-7Ei7dfDsazipj5mPrvx5usc6SJo6urz2iTY-fpDkVRh1rRhIzop3lzFwucN_lX3J042RpUQGJ8pJUTXLgasbPrIqxd6O-O6i9ItEEG_d2lZkdb_JnReAqGbn7v-4Ti8t0JqoyCBjYGG-vcVDw3KxbnxePsBqwxpRDNTHlZCKWxO4ugmtBt8c')"></div>
+</div>
+<h5 class="text-white font-bold text-lg">Acharya Dev</h5>
+<p class="text-accent-gold text-sm font-medium tracking-widest uppercase">Grandmaster of Neurotherapy</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-card-dark py-16 px-6 lg:px-20 border-t border-white/5">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 text-primary mb-6">
+<span class="material-symbols-outlined text-3xl font-bold">architecture</span>
+<h1 class="text-white text-xl font-bold tracking-tight">Vaidik Niramay</h1>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Empowering health through the confluence of Vedic wisdom and modern neuro-science.
+                    </p>
+<div class="flex gap-4">
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">videocam</span></a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+<div>
+<h6 class="text-white font-bold mb-6">Academy</h6>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">All Courses</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Workshops</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Certifications</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Scholarships</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-white font-bold mb-6">Support</h6>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Help Center</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Patient Portals</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Consultations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-white font-bold mb-6">Newsletter</h6>
+<p class="text-sm text-slate-400 mb-4">Stay updated on healing wisdom.</p>
+<div class="flex gap-2">
+<input class="bg-background-dark border-none rounded-lg px-4 py-2 text-sm w-full focus:ring-1 focus:ring-primary" placeholder="Email" type="email"/>
+<button class="bg-primary text-white p-2 rounded-lg"><span class="material-symbols-outlined">send</span></button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 text-center text-xs text-slate-500">
+                © 2024 Vaidik Niramay Neurotherapy Academy. All rights reserved.
+            </div>
+</footer>
+</div>
+</body></html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaidik Niramay - Projects Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff4400",
+                        "secondary": "#23140f",
+                        "background-light": "#f8f6f5",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 68, 0, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+        }
+        .hover-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px 0 rgba(255, 68, 0, 0.15);
+            border-color: rgba(255, 68, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background-light text-slate-900 min-h-screen relative overflow-x-hidden">
+    <!-- Decorative Background Elements -->
+    <div class="fixed top-[-10%] right-[-5%] w-96 h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed bottom-[-10%] left-[-5%] w-96 h-96 bg-orange-300/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="container mx-auto px-6 py-12 relative z-10">
+        <!-- Header -->
+        <header class="text-center mb-16">
+            <div class="inline-flex items-center justify-center p-3 bg-primary/10 rounded-2xl mb-6">
+                <span class="material-symbols-outlined text-primary text-4xl">local_fire_department</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-secondary mb-4">Vaidik Niramay</h1>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto">Explore the visually rich representations of the Healing Academy, Patient Portals, Doctor Dashboards, and Administrative Centers.</p>
+        </header>
+
+        <!-- Screens Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            
+            <!-- Doctor Dashboard -->
+            <a href="doctor-dashboard/index.html" target="_blank" class="glass-card hover-card rounded-2xl p-6 transition-all duration-300 flex flex-col h-full group">
+                <div class="size-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">stethoscope</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-secondary group-hover:text-primary transition-colors">Doctor Dashboard</h3>
+                <p class="text-sm text-slate-500 mb-4 flex-grow">A holistic view for doctors to manage appointments and patient data.</p>
+                <div class="flex items-center text-primary text-sm font-semibold group-hover:gap-2 transition-all">
+                    <span>View Screen</span>
+                    <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                </div>
+            </a>
+
+            <!-- Patient Dashboard -->
+            <a href="stitch (6)/code.html" target="_blank" class="glass-card hover-card rounded-2xl p-6 transition-all duration-300 flex flex-col h-full group">
+                <div class="size-12 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">health_metrics</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-secondary group-hover:text-blue-500 transition-colors">Patient Dashboard</h3>
+                <p class="text-sm text-slate-500 mb-4 flex-grow">Sacred Flame Health - Patient tracking and insights.</p>
+                <div class="flex items-center text-blue-500 text-sm font-semibold group-hover:gap-2 transition-all">
+                    <span>View Screen</span>
+                    <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                </div>
+            </a>
+
+            <!-- Admin Dashboard -->
+            <a href="stitch (3)/code.html" target="_blank" class="glass-card hover-card rounded-2xl p-6 transition-all duration-300 flex flex-col h-full group">
+                <div class="size-12 rounded-xl bg-purple-500/10 text-purple-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">admin_panel_settings</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-secondary group-hover:text-purple-500 transition-colors">Admin Dashboard</h3>
+                <p class="text-sm text-slate-500 mb-4 flex-grow">Control center for platform administration and analytics.</p>
+                <div class="flex items-center text-purple-500 text-sm font-semibold group-hover:gap-2 transition-all">
+                    <span>View Screen</span>
+                    <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                </div>
+            </a>
+
+            <!-- Ayurvedic Shop 1 -->
+            <a href="stitch (5)/code.html" target="_blank" class="glass-card hover-card rounded-2xl p-6 transition-all duration-300 flex flex-col h-full group">
+                <div class="size-12 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">storefront</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-secondary group-hover:text-emerald-500 transition-colors">Ayurvedic Shop</h3>
+                <p class="text-sm text-slate-500 mb-4 flex-grow">Storefront for holistic and ayurvedic products.</p>
+                <div class="flex items-center text-emerald-500 text-sm font-semibold group-hover:gap-2 transition-all">
+                    <span>View Screen</span>
+                    <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                </div>
+            </a>
+
+            <!-- Ayurvedic Essentials -->
+            <a href="stitch (1)/code.html" target="_blank" class="glass-card hover-card rounded-2xl p-6 transition-all duration-300 flex flex-col h-full group">
+                <div class="size-12 rounded-xl bg-green-600/10 text-green-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">eco</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-secondary group-hover:text-green-600 transition-colors">Ayurvedic Essentials</h3>
+                <p class="text-sm text-slate-500 mb-4 flex-grow">Detailed view and listing of essential ayurvedic items.</p>
+                <div class="flex items-center text-green-600 text-sm font-semibold group-hover:gap-2 transition-all">
+                    <span>View Screen</span>
+                    <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                </div>
+            </a>
+
+            <!-- Neurotherapy Academy -->
+            <a href="stitch (2)/code.html" target="_blank" class="glass-card hover-card rounded-2xl p-6 transition-all duration-300 flex flex-col h-full group">
+                <div class="size-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">school</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-secondary group-hover:text-indigo-500 transition-colors">Neurotherapy Academy</h3>
+                <p class="text-sm text-slate-500 mb-4 flex-grow">Educational platform for neurotherapy courses.</p>
+                <div class="flex items-center text-indigo-500 text-sm font-semibold group-hover:gap-2 transition-all">
+                    <span>View Screen</span>
+                    <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                </div>
+            </a>
+
+            <!-- Ancient Healing & Neurotherapy -->
+            <a href="stitch (4)/code.html" target="_blank" class="glass-card hover-card rounded-2xl p-6 transition-all duration-300 flex flex-col h-full group">
+                <div class="size-12 rounded-xl bg-teal-500/10 text-teal-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">spa</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-secondary group-hover:text-teal-500 transition-colors">Ancient Healing</h3>
+                <p class="text-sm text-slate-500 mb-4 flex-grow">Landing page for ancient healing practices.</p>
+                <div class="flex items-center text-teal-500 text-sm font-semibold group-hover:gap-2 transition-all">
+                    <span>View Screen</span>
+                    <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                </div>
+            </a>
+
+            <!-- Sacred Healing & Neurotherapy -->
+            <a href="stitch/code.html" target="_blank" class="glass-card hover-card rounded-2xl p-6 transition-all duration-300 flex flex-col h-full group">
+                <div class="size-12 rounded-xl bg-orange-500/10 text-orange-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">self_improvement</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-secondary group-hover:text-orange-500 transition-colors">Sacred Healing</h3>
+                <p class="text-sm text-slate-500 mb-4 flex-grow">Platform overview for sacred healing and neurotherapy.</p>
+                <div class="flex items-center text-orange-500 text-sm font-semibold group-hover:gap-2 transition-all">
+                    <span>View Screen</span>
+                    <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vaidik Niramay - Admin Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d0d",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .chart-glow {
+            filter: drop-shadow(0 0 8px rgba(242, 13, 13, 0.4));
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="flex h-screen overflow-hidden">
+<!-- Sidebar -->
+<aside class="w-72 bg-slate-50 dark:bg-background-dark border-r border-slate-200 dark:border-primary/20 flex flex-col">
+<div class="p-6 flex items-center gap-3">
+<div class="size-10 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">health_metrics</span>
+</div>
+<div class="flex flex-col">
+<h1 class="text-slate-900 dark:text-slate-100 font-bold text-lg leading-tight">Vaidik Niramay</h1>
+<span class="text-xs text-slate-500 dark:text-primary/60 font-medium uppercase tracking-wider">Premium Admin</span>
+</div>
+</div>
+<nav class="flex-1 px-4 space-y-1 overflow-y-auto">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary/10 text-primary group" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-medium">Analytics</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/5 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person_search</span>
+<span class="font-medium">Patient Logs</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/5 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-medium">Order Management</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/5 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="font-medium">Course Enrollments</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/5 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">admin_panel_settings</span>
+<span class="font-medium">Role Assignment</span>
+</a>
+</nav>
+<div class="p-4 border-t border-slate-200 dark:border-primary/20">
+<div class="flex items-center gap-3 p-2 bg-slate-100 dark:bg-primary/5 rounded-xl">
+<div class="size-10 rounded-full bg-cover bg-center" data-alt="Admin user profile picture profile" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDI-OVtr4kXKlVI-4fwgfjg9VbxxAoDH88AFBwVf0ZsIpcnsCYbr5le8nW-cVJIX16Go2k0HjQ_hQ03bOHZQNt4h704QTSwL3CWbozX9hV9I8yoMbaVadVOG5lUgo7jucBfZTAd8CXM33aGgawGFxV0yE9mOy46vaZUIYRQ6cMDRSlT8INENgYb1Fvl7nz8BjM0ltSwsg6mXu2v2yAKtvpcE9fJN8J3i5qjFCuStWzkAMv2JUHdaiXbgk8qw0UEJ8Zp00DMbP39UwRb')"></div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-semibold truncate">Dr. Shlok Gupta</p>
+<p class="text-xs text-slate-500 truncate">Chief Administrator</p>
+</div>
+<span class="material-symbols-outlined text-slate-400">settings</span>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 overflow-y-auto flex flex-col bg-background-light dark:bg-background-dark">
+<!-- Header -->
+<header class="h-20 border-b border-slate-200 dark:border-primary/20 px-8 flex items-center justify-between sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-10">
+<div class="relative w-96">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full bg-slate-100 dark:bg-primary/5 border-none rounded-lg pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-primary/50" placeholder="Search patients, orders, or courses..." type="text"/>
+</div>
+<div class="flex items-center gap-4">
+<button class="relative p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-primary/10 rounded-lg transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 size-2 bg-primary rounded-full"></span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-shadow shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-sm">add</span>
+                        New Intake
+                    </button>
+</div>
+</header>
+<div class="p-8 space-y-8">
+<!-- Metrics Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Total Revenue Card -->
+<div class="bg-white dark:bg-primary/5 p-6 rounded-xl border border-slate-100 dark:border-primary/10 shadow-sm relative overflow-hidden group">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wider">Total Revenue</p>
+<h3 class="text-3xl font-bold mt-1">₹4,50,000</h3>
+<p class="text-green-500 text-sm flex items-center mt-2 font-semibold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+                                    +12.5% <span class="text-slate-400 font-normal ml-1">this month</span>
+</p>
+</div>
+<div class="size-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">payments</span>
+</div>
+</div>
+<div class="mt-4 h-16 w-full">
+<svg class="w-full h-full chart-glow" viewbox="0 0 200 60">
+<path class="text-primary" d="M0 50 Q 25 45, 50 35 T 100 20 T 150 25 T 200 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+<!-- New Patients Card -->
+<div class="bg-white dark:bg-primary/5 p-6 rounded-xl border border-slate-100 dark:border-primary/10 shadow-sm relative overflow-hidden">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wider">New Patients</p>
+<h3 class="text-3xl font-bold mt-1">128</h3>
+<p class="text-green-500 text-sm flex items-center mt-2 font-semibold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+                                    +5.2% <span class="text-slate-400 font-normal ml-1">last 7 days</span>
+</p>
+</div>
+<div class="size-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">group_add</span>
+</div>
+</div>
+<div class="mt-4 h-16 w-full">
+<svg class="w-full h-full chart-glow" viewbox="0 0 200 60">
+<path class="text-primary" d="M0 55 Q 50 40, 100 45 T 200 15" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+<!-- Active Students Card -->
+<div class="bg-white dark:bg-primary/5 p-6 rounded-xl border border-slate-100 dark:border-primary/10 shadow-sm relative overflow-hidden">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wider">Active Students</p>
+<h3 class="text-3xl font-bold mt-1">856</h3>
+<p class="text-primary text-sm flex items-center mt-2 font-semibold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+                                    +18.0% <span class="text-slate-400 font-normal ml-1">growth rate</span>
+</p>
+</div>
+<div class="size-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">local_library</span>
+</div>
+</div>
+<div class="mt-4 h-16 w-full">
+<svg class="w-full h-full chart-glow" viewbox="0 0 200 60">
+<path class="text-primary" d="M0 40 Q 40 45, 80 25 T 160 30 T 200 10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Main Area Content -->
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+<!-- Recent Intake Forms (Digitizing section) -->
+<div class="xl:col-span-2 space-y-6">
+<div class="flex items-center justify-between">
+<h2 class="text-xl font-bold">Pending Patient Intake Forms</h2>
+<button class="text-primary text-sm font-semibold hover:underline">View All</button>
+</div>
+<div class="bg-white dark:bg-primary/5 rounded-xl border border-slate-100 dark:border-primary/10 overflow-hidden shadow-sm">
+<table class="w-full text-left">
+<thead class="bg-slate-50 dark:bg-primary/10 text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider">
+<tr>
+<th class="px-6 py-4 font-semibold">Patient Name</th>
+<th class="px-6 py-4 font-semibold">Form Type</th>
+<th class="px-6 py-4 font-semibold">Date Submitted</th>
+<th class="px-6 py-4 font-semibold">Status</th>
+<th class="px-6 py-4 font-semibold">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 dark:divide-primary/10">
+<tr class="hover:bg-slate-50 dark:hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded-full bg-slate-200 dark:bg-primary/20 flex items-center justify-center font-bold text-xs">RS</div>
+<span class="font-medium">Rajesh Sharma</span>
+</div>
+</td>
+<td class="px-6 py-4 text-sm">Ayurvedic Consultation</td>
+<td class="px-6 py-4 text-sm">Oct 24, 2023</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 text-[10px] font-bold uppercase">Pending Review</span>
+</td>
+<td class="px-6 py-4">
+<button class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded hover:bg-primary hover:text-white transition-colors">Digitize</button>
+</td>
+</tr>
+<tr class="hover:bg-slate-50 dark:hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded-full bg-slate-200 dark:bg-primary/20 flex items-center justify-center font-bold text-xs">AK</div>
+<span class="font-medium">Anjali Kapoor</span>
+</div>
+</td>
+<td class="px-6 py-4 text-sm">Panchakarma Intake</td>
+<td class="px-6 py-4 text-sm">Oct 23, 2023</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-[10px] font-bold uppercase">In Processing</span>
+</td>
+<td class="px-6 py-4">
+<button class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded hover:bg-primary hover:text-white transition-colors">Digitize</button>
+</td>
+</tr>
+<tr class="hover:bg-slate-50 dark:hover:bg-primary/5 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded-full bg-slate-200 dark:bg-primary/20 flex items-center justify-center font-bold text-xs">VM</div>
+<span class="font-medium">Vikram Mehta</span>
+</div>
+</td>
+<td class="px-6 py-4 text-sm">Follow-up Assessment</td>
+<td class="px-6 py-4 text-sm">Oct 23, 2023</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 text-[10px] font-bold uppercase">Pending Review</span>
+</td>
+<td class="px-6 py-4">
+<button class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded hover:bg-primary hover:text-white transition-colors">Digitize</button>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="p-4 bg-slate-50 dark:bg-primary/5 border-t border-slate-100 dark:border-primary/10 flex items-center justify-center gap-4">
+<div class="w-16 h-20 bg-slate-200 dark:bg-primary/20 rounded flex items-center justify-center" data-alt="Intake form thumbnail document preview">
+<span class="material-symbols-outlined text-slate-400">description</span>
+</div>
+<div class="flex-1">
+<p class="text-sm font-medium">Scanning digitizer active</p>
+<p class="text-xs text-slate-500">Ready to convert IMAGE_1 content into patient profile.</p>
+</div>
+<button class="px-4 py-2 border border-primary text-primary text-xs font-bold rounded-lg hover:bg-primary/10">Start Bulk Scan</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Growth & Quick Actions -->
+<div class="space-y-8">
+<div>
+<h2 class="text-xl font-bold mb-4">Growth Overview</h2>
+<div class="bg-white dark:bg-primary/5 p-6 rounded-xl border border-slate-100 dark:border-primary/10 shadow-sm">
+<div class="flex justify-between items-end mb-6">
+<div>
+<p class="text-slate-500 text-sm font-medium">Engagement Rate</p>
+<h4 class="text-2xl font-bold text-primary">+15%</h4>
+</div>
+<select class="bg-transparent border-none text-xs font-bold focus:ring-0 cursor-pointer">
+<option>Last 7 Days</option>
+<option>Last 30 Days</option>
+</select>
+</div>
+<div class="h-32 flex items-end justify-between gap-2">
+<div class="w-full bg-primary/20 rounded-t-sm h-1/2"></div>
+<div class="w-full bg-primary/30 rounded-t-sm h-2/3"></div>
+<div class="w-full bg-primary/40 rounded-t-sm h-1/3"></div>
+<div class="w-full bg-primary/60 rounded-t-sm h-3/4"></div>
+<div class="w-full bg-primary/80 rounded-t-sm h-1/2"></div>
+<div class="w-full bg-primary rounded-t-sm h-[90%]"></div>
+<div class="w-full bg-primary/70 rounded-t-sm h-2/3"></div>
+</div>
+<div class="flex justify-between mt-2 text-[10px] text-slate-500 font-bold uppercase tracking-widest">
+<span>Mon</span>
+<span>Tue</span>
+<span>Wed</span>
+<span>Thu</span>
+<span>Fri</span>
+<span>Sat</span>
+<span>Sun</span>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-xl font-bold mb-4">Quick Shortcuts</h2>
+<div class="grid grid-cols-2 gap-4">
+<button class="p-4 bg-white dark:bg-primary/5 rounded-xl border border-slate-100 dark:border-primary/10 hover:border-primary transition-all text-center flex flex-col items-center gap-2 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">inventory_2</span>
+<span class="text-xs font-semibold">Stock Check</span>
+</button>
+<button class="p-4 bg-white dark:bg-primary/5 rounded-xl border border-slate-100 dark:border-primary/10 hover:border-primary transition-all text-center flex flex-col items-center gap-2 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">mail</span>
+<span class="text-xs font-semibold">Communications</span>
+</button>
+<button class="p-4 bg-white dark:bg-primary/5 rounded-xl border border-slate-100 dark:border-primary/10 hover:border-primary transition-all text-center flex flex-col items-center gap-2 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">clinical_notes</span>
+<span class="text-xs font-semibold">Reports</span>
+</button>
+<button class="p-4 bg-white dark:bg-primary/5 rounded-xl border border-slate-100 dark:border-primary/10 hover:border-primary transition-all text-center flex flex-col items-center gap-2 group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">account_balance_wallet</span>
+<span class="text-xs font-semibold">Invoicing</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

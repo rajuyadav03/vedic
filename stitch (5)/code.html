@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vaidik Niramay | Ayurvedic Shop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff4400",
+                        "background-light": "#f8f6f5",
+                        "background-dark": "#23140f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<div class="relative flex min-h-screen flex-col">
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white">
+<span class="material-symbols-outlined">local_fire_department</span>
+</div>
+<h2 class="text-xl font-black tracking-tight text-slate-900 dark:text-white">Vaidik Niramay</h2>
+</div>
+<nav class="hidden items-center gap-6 md:flex">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Supplements</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Equipment</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Books</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 items-center">
+<label class="relative hidden w-full max-w-xs md:block">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 text-primary/60">
+<span class="material-symbols-outlined">search</span>
+</span>
+<input class="w-full rounded-xl border-none bg-primary/5 py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary/20 placeholder:text-slate-400" placeholder="Search healing products..." type="text"/>
+</label>
+<div class="flex gap-2">
+<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-slate-900 dark:text-white hover:bg-primary/20 transition-all">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="mx-auto w-full max-w-7xl px-6 py-8">
+<div class="mb-10 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+<div class="max-w-2xl">
+<div class="mb-2 flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span class="text-xs font-bold uppercase tracking-widest">Dr. Mehra's Sacred Selection</span>
+</div>
+<h1 class="text-4xl font-black leading-tight tracking-tight text-slate-900 dark:text-white sm:text-5xl">Ayurvedic Essentials</h1>
+<p class="mt-4 text-lg text-slate-600 dark:text-slate-400">Harmonize your mind, body, and spirit with our curated collection of ancient wisdom and modern science.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-sm font-medium text-slate-500">View:</span>
+<button class="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+<button class="flex h-9 w-9 items-center justify-center rounded-lg bg-primary/10 text-slate-600">
+<span class="material-symbols-outlined">view_list</span>
+</button>
+</div>
+</div>
+<div class="mb-8 flex flex-wrap gap-3 overflow-x-auto pb-2 scrollbar-hide">
+<button class="flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-white shadow-md transition-transform hover:scale-105">
+<span>All Healing</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+<button class="flex items-center gap-2 rounded-xl bg-white dark:bg-slate-800 px-5 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-200 border border-primary/10 hover:border-primary/40 transition-all">
+<span>Supplements</span>
+<span class="material-symbols-outlined text-sm">medication</span>
+</button>
+<button class="flex items-center gap-2 rounded-xl bg-white dark:bg-slate-800 px-5 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-200 border border-primary/10 hover:border-primary/40 transition-all">
+<span>Equipment</span>
+<span class="material-symbols-outlined text-sm">fitness_center</span>
+</button>
+<button class="flex items-center gap-2 rounded-xl bg-white dark:bg-slate-800 px-5 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-200 border border-primary/10 hover:border-primary/40 transition-all">
+<span>Books</span>
+<span class="material-symbols-outlined text-sm">auto_stories</span>
+</button>
+<button class="flex items-center gap-2 rounded-xl bg-white dark:bg-slate-800 px-5 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-200 border border-primary/10 hover:border-primary/40 transition-all">
+<span>Dr. Approved</span>
+<span class="material-symbols-outlined text-sm text-primary">verified</span>
+</button>
+</div>
+<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+<div class="group flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-primary/5">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Bottles of premium ashwagandha golden powder supplements" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsSeaooD63ywuLENnnsDhyyj6l4iUSOfmRsDRFep0PTnm4ilJnB7vzixinTprzUev_fGm_2-WXvyX5rDgOu99ySwW2lTinu1uLu-LvMkdjqI8Wh6lMda4B4whH_17iH_T81wzgNxmjC4FPDt72R_-9OMu1c1IDWm5-4Y4-jZBV0yNIab108c0fdSgfZnoJLTy1w0PbJY2aKc-fZG8cZ3gqDUuafAh5M-D5PuPX3qP9VnmfSia3WwkDTu5FxeNYNiSjL88ISwk9B_Jn');"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1 rounded-full bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
+<span class="material-symbols-outlined text-[12px]">verified</span> Approved
+                        </div>
+</div>
+<div class="flex flex-1 flex-col p-5">
+<div class="mb-1 text-xs font-bold text-primary">Supplements</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Ashwagandha Gold</h3>
+<p class="mb-4 text-xs text-slate-500 line-clamp-2">Enhance vitality and reduce stress with Dr. Mehra's proprietary organic blend.</p>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
+<span class="text-xl font-black text-slate-900 dark:text-white">₹899</span>
+<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-primary/5">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Artisanal pure copper water jug for meditation" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBXzPH5mTvqrIYAtMJImH3xEZKtBb-iGbLbCpvzWwGgJYWMoLwGnPu8YkVtI1oGkWpH0dZoO8JrVOJHd8Ygg4v3DY3o7pYdhhYl54ht_QQT1vwiwztwTpMp2SCs4Yq-55EQV2GhzMqjeIhqPX2dmgTw7BeJPwqSSN75tf7isIMyXny8vTMIvVstyKqnXVAWlcp5NEHN7RwwNMFs_zvfTPFUKlastCREmDpWL-1_AQLqmoXl7npaivsnLs66R-8Te7ekaCJPtbUDJfIU');"></div>
+</div>
+<div class="flex flex-1 flex-col p-5">
+<div class="mb-1 text-xs font-bold text-primary">Equipment</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Copper Water Jug</h3>
+<p class="mb-4 text-xs text-slate-500 line-clamp-2">Traditional copper vessel designed for overnight water purification and wellness.</p>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
+<span class="text-xl font-black text-slate-900 dark:text-white">₹1,250</span>
+<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-primary/5">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Premium eco-friendly cork yoga meditation mat" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZRlqMU_Au2n9GyyG849MX1gAm11bCisUSbdQSgEKHfZH5J_-SAyKeYqKIi1uy-WvebPTXCMS0lEm4CdRZTkfOMjYuFo4A1TbgOvorh4kje6FVt7NqWkS1IL5l3tvKdjXNUi_hysCnMQa7KoA_2l29KpTuoiXfx0Bbr3Yf_q482vI5jn9yyl0HjXRSTt-EAMRm9CY2O89fIQdv4jzP2m9I0nSTQXnZeryOPQGzwqwissNq_765EetLgA2NTDpVbDChSTOkIVK5IVzj');"></div>
+<div class="absolute top-3 right-3 flex items-center gap-1 rounded-full bg-slate-900/80 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white backdrop-blur">
+                            Popular
+                        </div>
+</div>
+<div class="flex flex-1 flex-col p-5">
+<div class="mb-1 text-xs font-bold text-primary">Equipment</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Yoga Meditation Mat</h3>
+<p class="mb-4 text-xs text-slate-500 line-clamp-2">Eco-friendly natural rubber and jute blend for the perfect meditation grip.</p>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
+<span class="text-xl font-black text-slate-900 dark:text-white">₹2,499</span>
+<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-primary/5">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Classic hardcover book about ayurvedic medicine" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD99dwR618EGSWM4apgoM-kmmcKe4vkFPU2T7DnohNeGcbxCgJtwbE9vQyQKF9XxDeK1m1k4Y80Pp0rcPyKPilYo_LPp00fVlKLvf6t3SRwzNueNAsJWclh9V1TSNuGWyklhsqpPjSpi98eaRkV4HXBfhlb0CrS1q8DEgI-c_ybNPNU8O9RdQ66BONqn-n1lzsMeQ3DzCMfhpMPlgB7eWpXWCXlgrVTXL8dQBVAlfU5TAXpg496UyvROET6UmQwfyNyWHR5SA7R-A2E');"></div>
+</div>
+<div class="flex flex-1 flex-col p-5">
+<div class="mb-1 text-xs font-bold text-primary">Books</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Ayurveda Guide Book</h3>
+<p class="mb-4 text-xs text-slate-500 line-clamp-2">A comprehensive journey into healing rituals and herbal wisdom for modern living.</p>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
+<span class="text-xl font-black text-slate-900 dark:text-white">₹450</span>
+<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-primary/5">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Organic Triphala detox supplements in amber bottle" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNLGol55GdS6lqXBTT1czhlM0thsunxx9Mj7qyQ2Jl6BMazR4PkzRgr-FWgi-zhcW-OI4jiwCgXODh0QAbCCG-csStSLhuFl7ud-Dn3qhj8IOQK7jXG-0dDfob_M9p1cKiytSQpcPCOw-Iv1OWWf0wOFty7UqHvaTqy03LxdH_pSFEyOYWBSYR7fc4-XCTGaPv9TIXlzadvVrod2os6HsNuXrFWmkv0UZlXhBUn1bEsuS9RS9qdA605Mn-MTRtJ5Wmwk0XStV3M7e2');"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1 rounded-full bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
+<span class="material-symbols-outlined text-[12px]">verified</span> Approved
+                        </div>
+</div>
+<div class="flex flex-1 flex-col p-5">
+<div class="mb-1 text-xs font-bold text-primary">Supplements</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Organic Triphala</h3>
+<p class="mb-4 text-xs text-slate-500 line-clamp-2">Detoxify and rejuvenate your digestive system with this ancient triple-herb formula.</p>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
+<span class="text-xl font-black text-slate-900 dark:text-white">₹650</span>
+<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-primary/5">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Aromatic sandalwood incense sticks and holder" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANIuhkNwbJM4Ozpo1wGOnQhJl2EtsE4LJgqSvyjP1LT6mY1TjKWQjAqWLtpqFlFeq4SRV7hqjAKFKDbHd4IbMRLN1HPtGZPY2i29ipdbpc55jQibR1aaZKfw0z8_o-kKUo93fgNpmwX7vHjOjs_FFc303AItTzahvjPhg1b5YtoM0Cy5LcVlu8cdICuFbrIUsVetREdrrM0uuO_D6fmPe1AfZ0lpXTk4NwgbOcYDSAiKmnzTGVg0pFrkyBODztgmHQ_X3iQGZIupjd');"></div>
+</div>
+<div class="flex flex-1 flex-col p-5">
+<div class="mb-1 text-xs font-bold text-primary">Sacred Space</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Pure Sandalwood Incense</h3>
+<p class="mb-4 text-xs text-slate-500 line-clamp-2">Hand-rolled incense sticks made from sustainably sourced Mysore sandalwood.</p>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
+<span class="text-xl font-black text-slate-900 dark:text-white">₹320</span>
+<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-primary/5">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Tibetan handcrafted brass singing bowl" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYA-bUBxNJdJFlOyo_I49OpcGhwmKcyTX2DiCL1gaH8Xuz4xJ2y-HeEkwrwAk_hk72B_t8bwb0APK7WRwaBV0sxzMI5wGDxXGXSSJ7-o-mtmbfQtgqAhDjKUq6Eakq-zCX4WtDbypjgiuAW_B7-kp6iZNg6TNISn4yc7yN6nGO2NBIDBHLtOozefeUQ8_--9XQ2EfNTT2K9sGf_sp-qtCNW4VvatzZ4G0m6aObqsbxAbqUuwuHnX0Wqg3BIDfo4hcyDzEaTZsOmP4m');"></div>
+</div>
+<div class="flex flex-1 flex-col p-5">
+<div class="mb-1 text-xs font-bold text-primary">Equipment</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Hand-beaten Singing Bowl</h3>
+<p class="mb-4 text-xs text-slate-500 line-clamp-2">Authentic 7-metal resonance bowl for sound healing and deep meditation.</p>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
+<span class="text-xl font-black text-slate-900 dark:text-white">₹3,999</span>
+<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-slate-800 shadow-sm transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-primary/5">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Herbal infusion tea bags with natural ingredients" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDD1Ge5jKluV60PGJOVrxMN1G_88x40a_4s8EcxUAUdmvk_YTL-YjZSjwxUwVBOp7PPGh07UTiU2RPonKXpF53ICBbobRaSJtiRSEqCqTFnbHSAqLEed8abV3vnBDBK-aZKeenOd8Yix60RTxJR9ZD-R68xYEP6hzbuhAbGJmnNH813W5DOSb_k-UW-q-x4F8lIjpFsDN_MOORG5cFWKTOgF3n-JyYr2WY-QhGIy5oA91J5N06m2EFzSy8oht1fsvrUjUYxSoKf0yZ0');"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1 rounded-full bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
+<span class="material-symbols-outlined text-[12px]">verified</span> Approved
+                        </div>
+</div>
+<div class="flex flex-1 flex-col p-5">
+<div class="mb-1 text-xs font-bold text-primary">Supplements</div>
+<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Calm Night Infusion</h3>
+<p class="mb-4 text-xs text-slate-500 line-clamp-2">A soothing blend of Jatamansi and Shankhpushpi for restorative sleep.</p>
+<div class="mt-auto flex items-center justify-between pt-4 border-t border-primary/5">
+<span class="text-xl font-black text-slate-900 dark:text-white">₹540</span>
+<button class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-md hover:bg-primary/80 transition-colors">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16 rounded-3xl bg-primary/5 p-8 text-center md:p-12">
+<div class="mx-auto max-w-xl">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white md:text-3xl">Need Personalized Guidance?</h2>
+<p class="mt-4 text-slate-600 dark:text-slate-400">Consult with Dr. Mehra to find the right Ayurvedic regimen tailored to your unique Dosha profile.</p>
+<button class="mt-8 rounded-xl bg-primary px-8 py-3 text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary/90 hover:shadow-xl">Book a Consultation</button>
+</div>
+</div>
+</main>
+<footer class="mt-auto border-t border-primary/10 bg-white dark:bg-slate-900 py-12">
+<div class="mx-auto max-w-7xl px-6">
+<div class="grid grid-cols-1 gap-12 md:grid-cols-4">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-sm">local_fire_department</span>
+</div>
+<h2 class="text-lg font-black tracking-tight text-slate-900 dark:text-white">Vaidik Niramay</h2>
+</div>
+<p class="max-w-sm text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Dedicated to preserving and promoting the sacred science of Ayurveda. Each product is meticulously selected for purity and potency.</p>
+<div class="mt-6 flex gap-4">
+<a class="h-10 w-10 flex items-center justify-center rounded-full bg-primary/10 text-primary transition-all hover:bg-primary hover:text-white" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="h-10 w-10 flex items-center justify-center rounded-full bg-primary/10 text-primary transition-all hover:bg-primary hover:text-white" href="#"><span class="material-symbols-outlined text-lg">mail</span></a>
+</div>
+</div>
+<div>
+<h4 class="mb-6 text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-white">Quick Links</h4>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Shop All</a></li>
+<li><a class="hover:text-primary" href="#">Dr. Mehra's Blog</a></li>
+<li><a class="hover:text-primary" href="#">Dosha Quiz</a></li>
+<li><a class="hover:text-primary" href="#">My Account</a></li>
+</ul>
+</div>
+<div>
+<h4 class="mb-6 text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-white">Support</h4>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Shipping Policy</a></li>
+<li><a class="hover:text-primary" href="#">Returns &amp; Refunds</a></li>
+<li><a class="hover:text-primary" href="#">Consultation FAQ</a></li>
+<li><a class="hover:text-primary" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-12 border-t border-primary/5 pt-8 text-center text-xs text-slate-400">
+<p>© 2024 Vaidik Niramay. Sacred Healing for Modern Living.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
